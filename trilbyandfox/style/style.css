@@ -1,0 +1,64 @@
+body {
+ font-family: 'Ubuntu Condensed', sans-serif;
+  background: white;
+  align-content: center;
+  text-align: center;
+
+}
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: #80ffbf;
+}
+div {
+  margin: auto;
+}
+
+
+img.mySlides {
+  margin: 0 auto;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+h1 {
+font-family: 'Charmonman', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: black;
+ margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  padding: 30px;
+  font-size: 20px;
+  margin: auto;
+}
+ul {
+  margin: 200px;
+  text-align: center;
+  list-style: none;
+}
+.saledates {
+  float: right;
+}
+
+}
+p {
+  margin: 50px, 0;
+  line-height: 2;
+}
+h3 {
+color: #bbbbbb;
+margin-top: 50px;
+}

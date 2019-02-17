@@ -6,37 +6,38 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style/style.css">
+  <script type="text/javascript" src="scripts/main.js">
+
+  </script>
 </head>
 
 <body>
-
   <h1>Trilby and fox</h1>
   <h2>Independent, handmade wares</h2>
-
+  <div class ="big">
   <div class="imgslider">
     <img class="mySlides" src="images/leadinglady.jpg"></img>
     <img class="mySlides" src="images/pinkchair.jpg"></img>
     <img class="mySlides" src="images/hairpintable.jpeg"></img>
-
-    <h3> Spring sale </h3>
-
-    <p><strong>Weekly garage sale </strong><span class="saledates">Feb - Mar</span><br />
-      <small>Flea market finds, vintage treasures, 1940s dresses. You never know what you might find in this pile! </small></p>
-
-      <p><strong> Ceramics and plates </strong><span class="saledates">Feb - Apr</span><br />
-        <small>Hope you aren't a bull in a china shop! Cute pieces of porcelain for your pet succulents and airplants here.</small></p>
-
-        <p> <strong> Warm all winter </strong> <span class="saledates">Apr- May</span><br />
-          <small>Blankets and throws for your couch or for Halloween</small></p>
-
-          <span class="saledates"><button class ="clickme" type="button"
-            onclick="document.getElementById('Date and time').innerHTML = Date()">
-            Date and Time.</button>
-
-            <p id="Date and time"></p></span>
-
           </div>
+          <article>
+            <h3> Spring sale </h3>
 
+            <p><strong>Weekly garage sale </strong>
+              <small>Flea market finds, vintage treasures, 1940s dresses. You never know what you might find in this pile! </small></p>
+
+              <p><strong> Ceramics and plates </strong>
+                <small>Hope you aren't a bull in a china shop! Cute pieces of porcelain for your pet succulents and airplants here.</small></p>
+
+                <p> <strong> Warm all winter </strong>
+                  <small>Blankets and throws for your couch or for Halloween</small></p>
+
+                  <span class="saledates"><button class ="clickme" type="button"
+                    onclick="document.getElementById('Date and time').innerHTML = Date()">
+                    Date and Time.</button>
+
+          </article>
+          </div>
           <script>
             var myIndex = 0;
             carousel();
@@ -53,14 +54,13 @@
               setTimeout(carousel, 2000); // Change image every 2 seconds
             }
           </script>
-
+        </body>
+        <footer>
           <ul>
             <li><a href=facebook.com="_blank">Facebook</a></li>
             <li><a href=twitter.com="_blank">Twitter</a></li>
             <li><a href=instagram.com="_blank">Instagram</a></li>
             <li><a href=pinterest.com target="_blank">Pinterest</a></li>
           </ul>
-
-
-        </body>
+        </footer>
         </html>

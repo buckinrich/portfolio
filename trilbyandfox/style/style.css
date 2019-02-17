@@ -3,8 +3,12 @@ body {
   background: white;
   align-content: center;
   text-align: center;
-
 }
+
+.big {
+  width: 500px;
+}
+
 a:link {
     color: orange;
 }
@@ -20,7 +24,6 @@ div {
   margin: auto;
 }
 
-
 img.mySlides {
   margin: 0 auto;
 }
@@ -30,6 +33,7 @@ img {
   height: 500px;
   text-align: center;
 }
+
 h1 {
 font-family: 'Charmonman', cursive;
   text-align: center;
@@ -37,6 +41,7 @@ font-family: 'Charmonman', cursive;
   color: black;
  margin: 60px 0 0 0;
 }
+
 h2 {
   text-align: center;
   color: #bbbbbb;
@@ -44,16 +49,13 @@ h2 {
   font-size: 20px;
   margin: auto;
 }
+
 ul {
   margin: 200px;
   text-align: center;
   list-style: none;
 }
-.saledates {
-  float: right;
-}
 
-}
 p {
   margin: 50px, 0;
   line-height: 2;
@@ -61,4 +63,8 @@ p {
 h3 {
 color: #bbbbbb;
 margin-top: 50px;
+}
+
+article {
+width: 500px;
 }

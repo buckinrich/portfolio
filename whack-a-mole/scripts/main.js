@@ -4,7 +4,6 @@ $(() => {
   let score = 0
   let timerRunning = false
   const $score = $('#scoreupdate')
-  // const $highscore = $('#highscore-display')
 
   //Mole set interval
   setInterval(() => {
@@ -40,6 +39,7 @@ $(() => {
 
   //Start Button Events
   function startStopBtn() {
+    score = 0
     if(timerRunning) return false
     timerRunning = true
     countdown = setInterval(() => {
@@ -58,14 +58,16 @@ $(() => {
         $startButton.html('Try again?')
         const $logo = $('.logo')
         $logo.css('display', 'none')
+        const $h3 = $('h3')
+        $h3.css('visibility', 'visible')
+        const $highscoreclass = $('.highscoreclass')
+        $highscoreclass.css('visibility', 'visible')
 
-        // const $storehigh = localStorage.getItem('highscore')
-        localStorage.setItem('highscore', score)
-        console.log(score)
         const storehigh = localStorage.getItem('highscore')
-        if(storehigh > score){
-          getHigh()
+        if(storehigh < score){
+          localStorage.setItem('highscore', score)
         }
+        getHigh()
       }
 
 
@@ -73,16 +75,10 @@ $(() => {
     }, 1000)
   }
 
-  const storehigh = localStorage.getItem('highscore')
   function getHigh() {
     const $highScoreHere = $('#highscorehere')
+    const storehigh = localStorage.getItem('highscore')
     $highScoreHere.html(storehigh)
   }
-  // if (storehigh > score || score === false){
-  //   const $scoreupdate = $('#scoreupdate')
-  //   $scoreupdate.html(`${storehigh}`)
-  // }
-
-
 
 })

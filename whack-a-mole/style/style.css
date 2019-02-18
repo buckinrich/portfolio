@@ -17,6 +17,8 @@ margin-top: 130px;
   font-family: 'Lobster', sans-serif;
 }
 
+
+
 h1 {
   animation-duration: 3s;
   animation-name: pulse;
@@ -24,6 +26,13 @@ h1 {
   font-family: 'Lobster', sans-serif;
 }
 
+h2 {
+  visibility: hidden;
+}
+
+h3 {
+  visibility: hidden;
+}
 
 .timer {
   font-size: 30px;

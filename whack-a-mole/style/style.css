@@ -17,17 +17,16 @@ margin-top: 130px;
   font-family: 'Lobster', sans-serif;
 }
 
-
-
 h1 {
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: pulse;
   font-size: 60px;
   font-family: 'Lobster', sans-serif;
 }
 
 h2 {
-  visibility: hidden;
+  font-family: 'Lobster', sans-serif;
+  margin-top: 20px;
 }
 
 h3 {
@@ -47,7 +46,7 @@ main {
   display: none;
 }
 .colorbox {
-  background-color: papayawhip;
+  background: url("images/field.png");
   margin: 0 auto;
   width: 600px;
   height: 550px;
@@ -68,7 +67,7 @@ main {
   margin: 0;
   padding: 0;
   float:left;
-  background-color: papayawhip;
+  /* background-color: papayawhip; */
   border-color: black;
   /* visibility: hidden; */
 }
@@ -86,6 +85,7 @@ main {
   background: url("images/whack.png");
 }
 
+
 .mole {
   background: url("images/mole.png");
   background-size: 100px 100px;
@@ -94,6 +94,8 @@ main {
 .startButton {
   margin-top: 20px;
   background-color: black;
+  animation-duration: 4s;
+  animation-name: jello;
   border-radius: 5px;
   color: white;
   font-size: 16px;
@@ -101,14 +103,62 @@ main {
   height: 30px;
 }
 
-/* .high-scorediv{
-  min-height: 50px;
-  margin-top: 20px;
-} */
 
 .start-div {
   min-height: 50px;
 }
+
+@keyframes jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+.jello {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
 
 @-webkit-keyframes pulse {
   from {
@@ -125,4 +175,32 @@ main {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+
+@keyframes hinge {
+   0% {
+      transform: rotate(0);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+   }
+   20%, 60% {
+      transform: rotate(80deg);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+   }
+   40% {
+      transform: rotate(60deg);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+   }
+   80% {
+      transform: rotate(60deg) translateY(0);
+      opacity: 1;
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+   }
+   100% {
+      transform: translateY(700px);
+      opacity: 0;
+   }
 }

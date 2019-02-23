@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.atlassian.com/git -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/221213238088884" async=""></script><script async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/fbevents.js"></script><script type="text/javascript" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/ei.js"></script><script async="" id="demandbase_js_lib" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/BwkB5d1U.min.js"></script><script type="text/javascript" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/bat.js"></script><script type="text/javascript" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/insight.min.js"></script><script type="text/javascript" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/linkid.js"></script><script type="text/javascript" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/gtm.js"></script><script type="text/javascript" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/analytics.js"></script><script type="text/javascript" id="analytics-js" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/analytics.min.js"></script><script type="text/javascript" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/ip.json"></script><script type="text/javascript" async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/geo2.js"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="fb:pages" content="115407078489594">
+<meta name="description" content="Learn Git with beginner to advanced Git tutorials on workflows, git commands, git migration and code review.">
+<meta name="author" content="Atlassian">
+<link rel="canonical" href="https://www.atlassian.com/git">
+<title>Learn Git- Git tutorials, workflows and commands | Atlassian Git Tutorial</title>
+<link rel="stylesheet" href="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/site.css">
+<link rel="stylesheet" href="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/icons.css" class="additional-css">
+<link rel="stylesheet" href="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/editmode.css" class="additional-css">
+<link href="https://plus.google.com/+atlassian" rel="publisher">
+<link rel="alternate" href="https://www.atlassian.com/git" hreflang="en-US">
+<link rel="alternate" href="https://cn.atlassian.com/git" hreflang="zh-Hans-CN">
+<link rel="alternate" href="https://cs.atlassian.com/git" hreflang="cs-CZ">
+<link rel="alternate" href="https://de.atlassian.com/git" hreflang="de-DE">
+<link rel="alternate" href="https://nl.atlassian.com/git" hreflang="nl-NL">
+<link rel="alternate" href="https://es.atlassian.com/git" hreflang="es-ES">
+<link rel="alternate" href="https://fi.atlassian.com/git" hreflang="fi-FI">
+<link rel="alternate" href="https://fr.atlassian.com/git" hreflang="fr-FR">
+<link rel="alternate" href="https://hu.atlassian.com/git" hreflang="hu-HU">
+<link rel="alternate" href="https://it.atlassian.com/git" hreflang="it-IT">
+<link rel="alternate" href="https://ja.atlassian.com/git" hreflang="ja-JP">
+<link rel="alternate" href="https://ko.atlassian.com/git" hreflang="ko-KR">
+<link rel="alternate" href="https://pl.atlassian.com/git" hreflang="pl-PL">
+<link rel="alternate" href="https://br.atlassian.com/git" hreflang="pt-BR">
+<link rel="alternate" href="https://www.atlassian.com/ro/git" hreflang="ro-RO">
+<link rel="alternate" href="https://ru.atlassian.com/git" hreflang="ru-RU">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/favicon.png" sizes="32x32">
+<link rel="mask-icon" href="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/safari-pinned-tab.svg" color="#59afe1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://wac-cdn.atlassian.com/assets/img/favicons/gitguide/mstile-144x144.png">
+<meta name="theme-color" content="#205081">
+<meta property="og:title" content="Learn Git- Git tutorials, workflows and commands | Atlassian Git Tutorial">
+<meta property="og:description" content="Learn Git with beginner to advanced Git tutorials on workflows, git commands, git migration and code review.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.atlassian.com/git">
+<meta property="og:site_name" content="Atlassian">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Atlassian">
+<script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/jquery.min.js"></script>
+<script type="text/javascript">
+/**
+* function to load external js through javascript.
+*
+* @param url - javascript url
+* @param location - location of the dom (e.g. document.head)
+*/
+var loadExternalJS = function(url, location, callback){
+var scriptTag = document.createElement('script');
+scriptTag.src = url;
+scriptTag.type = 'text/javascript';
+/* Then bind the event to the callback function.
+There are several events for cross browser compatibility. */
+scriptTag.onreadystatechange = callback;
+scriptTag.onload = callback;
+/* Fire the loading */
+location.appendChild(scriptTag);
+};
+</script>
+<!-- OneTrust Cookies Consent Notice (Production CDN, www.atlassian.com, en-GB) start -->
+<script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/141bbadf-8293-4d74-9552-81ec52e16c66.js" type="text/javascript" charset="UTF-8"></script><link type="text/css" href="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/optanon.css" rel="stylesheet"><style>#optanon ul#optanon-menu li { background-color:  !important }#optanon ul#optanon-menu li.menu-item-selected { background-color:  !important }#optanon #optanon-popup-wrapper .optanon-white-button-middle { background-color: #FFAB00 !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle { background-color: #FFAB00 !important; border-color: #FFAB00 !important; }#optanon #optanon-popup-wrapper .optanon-white-button-middle button { color: #ffffff !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle button { color: #ffffff !important }#optanon #optanon-popup-bottom { background-color: #172B4D !important }#optanon.modern #optanon-popup-top, #optanon.modern #optanon-popup-body-left-shading { background-color: #172B4D !important }.optanon-alert-box-wrapper { background-color:#172B4D !important }.optanon-alert-box-wrapper .optanon-alert-box-bg p { color:#FFFFFF !important }#optanon, #optanon *, #optanon div, #optanon span, #optanon ul, #optanon li, #optanon a, #optanon p, .optanon-alert-box-wrapper * {
+font-family: LLCircularWeb,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+
+#optanon #optanon-popup-body h2 {
+    position: absolute;
+    top: -55px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 5px 0px 0px 5px;
+}
+#optanon #optanon-popup-body .legacy-preference-banner-title {
+    margin: 5px 0px 0px 5px;
+    padding: 0px;
+    color: #ffffff;
+}
+#optanon #optanon-popup-wrapper .optanon-white-button-middle a {
+    color: #000000 !important; 
+}
+.optanon-alert-box-wrapper .optanon-alert-box-button-middle a {
+    color: #000000 !important;
+}
+.optanon-alert-box-wrapper a {
+    color: #ffffff !important; 
+    text-indent: 1;
+   font-weight: bold; 
+  
+}
+
+.optanon-alert-box-button-middle, #optanon #optanon-popup-wrapper .optanon-white-button-middle {
+   border-radius: 4px;
+}
+.optanon-alert-box-wrapper {
+    margin: 4px;
+    border-radius: 4px;
+    width: 99.5%;
+}
+
+#optanon.modern #optanon-popup-top, #optanon.modern #optanon-popup-body-left-shading
+{
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+#optanon #optanon-popup-bottom {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#optanon #optanon-popup-bottom-logo:after {
+    content: 'OneTrust';
+    color: #ffffff;
+}
+#optanon #optanon-popup-bottom-logo:before {
+    content: 'Powered by';
+    color: #ffffff;
+}
+.optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle a:before {
+    content: '';
+}
+.optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle a:before {
+    content: '';
+}
+#optanon #optanon-popup-top .optanon-close, .optanon-alert-box-wrapper .optanon-alert-box-corner-close a {
+    right: 10px;
+}
+ @media only screen and (max-width: 47em) {
+ .optanon-alert-box-wrapper.hide-cookie-setting-button .optanon-alert-box-body {
+    margin-right: auto;
+    padding-right: 5px;
+}
+}</style><script type="text/javascript" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice (Production CDN, www.atlassian.com, en-GB) end -->
+<script type="text/javascript" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/1096093.js"></script>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "WebPage",
+"name": "Getting Git Right",
+"description":"Git is a free and open source version control system, originally created by Linus Torvalds in 2005. Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally. This makes the initial clone of the repository slower, but subsequent operations such as commit, blame, diff, merge, and log dramatically faster.",
+"specialty":"Git"
+}
+</script>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "HowTo",
+"name": "How Git Works?",
+"step": [
+{
+"@type": "HowToDirection",
+"position": "1",
+"text": "Create a 'repository' (project) with a git hosting tool (like Bitbucket)"
+},
+{
+"@type": "HowToDirection",
+"position": "2",
+"text": "Copy (or clone) the repository to your local machine"
+},
+{
+"@type": "HowToDirection",
+"position": "3",
+"text":"Add a file to your local repo and 'commit' (save) the changes"
+},
+{
+"@type": "HowToDirection",
+"position": "4",
+"text": "'Push' your changes to your master branch"
+},
+{
+"@type": "HowToDirection",
+"position": "5",
+"text": "Make a change to your file with a git hosting tool and commit"
+},
+{
+"@type": "HowToDirection",
+"position": "6",
+"text":"'Pull' the changes to your local machine"
+},
+{
+"@type": "HowToDirection",
+"position": "7",
+"text": "Create a 'branch' (version), make a change, commit the change"
+},
+{
+"@type": "HowToDirection",
+"position": "8",
+"text": "Open a 'pull request' (propose changes to the master branch)"
+},
+{
+"@type": "HowToDirection",
+"position": "9",
+"text":"'Merge' your branch to the master branch"
+}
+]
+}
+</script>
+<style data-styled-components="">
+/* sc-component-id: sc-keyframes-bZGgwh */
+@-webkit-keyframes bZGgwh{from{opacity:0;}to{opacity:0;}} @keyframes bZGgwh{from{opacity:0;}to{opacity:0;}}
+/* sc-component-id: sc-keyframes-cZJnvt */
+@-webkit-keyframes cZJnvt{from{-webkit-transform:rotate(50deg);-ms-transform:rotate(50deg);transform:rotate(50deg);}to{-webkit-transform:rotate(230deg);-ms-transform:rotate(230deg);transform:rotate(230deg);}} @keyframes cZJnvt{from{-webkit-transform:rotate(50deg);-ms-transform:rotate(50deg);transform:rotate(50deg);}to{-webkit-transform:rotate(230deg);-ms-transform:rotate(230deg);transform:rotate(230deg);}}
+/* sc-component-id: sc-keyframes-iLtbJJ */
+@-webkit-keyframes iLtbJJ{from{-webkit-transform:rotate(230deg);-ms-transform:rotate(230deg);transform:rotate(230deg);}to{-webkit-transform:rotate(510deg);-ms-transform:rotate(510deg);transform:rotate(510deg);}} @keyframes iLtbJJ{from{-webkit-transform:rotate(230deg);-ms-transform:rotate(230deg);transform:rotate(230deg);}to{-webkit-transform:rotate(510deg);-ms-transform:rotate(510deg);transform:rotate(510deg);}}
+/* sc-component-id: sc-keyframes-hSsjZP */
+@-webkit-keyframes hSsjZP{from{opacity:1;}to{opacity:0;}} @keyframes hSsjZP{from{opacity:1;}to{opacity:0;}}
+/* sc-component-id: styledContainer__Container-sc-1qs8wxp-0 */
+
+/* sc-component-id: AtlaskitThemeProvider__LegacyReset-sc-431dkp-0 */
+
+/* sc-component-id: Reset__Div-sc-15i6ali-0 */
+
+/* sc-component-id: sc-keyframes-ibwhYF */
+@-webkit-keyframes ibwhYF{to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}} @keyframes ibwhYF{to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}
+/* sc-component-id: sc-keyframes-eMLfYp */
+@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}} @keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}
+/* sc-component-id: sc-keyframes-eUeRWO */
+@-webkit-keyframes eUeRWO{from{stroke-dashoffset:43.982297150257104px;}to{stroke-dashoffset:35.18583772020568px;}} @keyframes eUeRWO{from{stroke-dashoffset:43.982297150257104px;}to{stroke-dashoffset:35.18583772020568px;}}
+/* sc-component-id: sc-keyframes-jcVgLC */
+@-webkit-keyframes jcVgLC{from{stroke-dashoffset:69.11503837897544px;}to{stroke-dashoffset:55.29203070318036px;}} @keyframes jcVgLC{from{stroke-dashoffset:69.11503837897544px;}to{stroke-dashoffset:55.29203070318036px;}}
+/* sc-component-id: sc-keyframes-korNWI */
+@-webkit-keyframes korNWI{from{stroke-dashoffset:135.0884841043611px;}to{stroke-dashoffset:108.07078728348888px;}} @keyframes korNWI{from{stroke-dashoffset:135.0884841043611px;}to{stroke-dashoffset:108.07078728348888px;}}
+/* sc-component-id: sc-keyframes-gvARzl */
+@-webkit-keyframes gvARzl{from{stroke-dashoffset:270.1769682087222px;}to{stroke-dashoffset:216.14157456697777px;}} @keyframes gvARzl{from{stroke-dashoffset:270.1769682087222px;}to{stroke-dashoffset:216.14157456697777px;}}
+/* sc-component-id: styledSvg__Svg-y2l69q-0 */
+
+/* sc-component-id: Spinner__Outer-sc-1ejgacn-0 */
+
+/* sc-component-id: sc-bdVaJa */
+
+/* sc-component-id: sc-bwzfXH */
+
+/* sc-component-id: sc-htpNat */
+
+/* sc-component-id: sc-bxivhb */
+
+/* sc-component-id: sc-ifAKCX */
+
+/* sc-component-id: sc-EHOje */
+
+/* sc-component-id: ScrollBlock__Blanket-sc-1xiww8k-0 */
+
+/* sc-component-id: styledContentContainer-p0j3f7-0 */
+
+/* sc-component-id: Layer__FixedTarget-qunuuz-0 */
+
+/* sc-component-id: Droplist-sc-1z05y4v-0 */
+
+/* sc-component-id: Droplist__Content-sc-1z05y4v-1 */
+
+/* sc-component-id: Droplist__SpinnerContainer-sc-1z05y4v-2 */
+
+/* sc-component-id: Droplist__Trigger-sc-1z05y4v-3 */
+
+/* sc-component-id: ItemParts__InputWrapper-sc-14xek3m-0 */
+
+/* sc-component-id: ItemParts__BeforeAfterBase-sc-14xek3m-1 */
+
+/* sc-component-id: ItemParts__Before-sc-14xek3m-2 */
+
+/* sc-component-id: ItemParts__After-sc-14xek3m-3 */
+
+/* sc-component-id: ItemParts__ContentWrapper-sc-14xek3m-4 */
+
+/* sc-component-id: ItemParts__Content-sc-14xek3m-5 */
+
+/* sc-component-id: ItemParts__Description-sc-14xek3m-6 */
+
+/* sc-component-id: ItemGroup__GroupTitle-ofbfv9-0 */
+
+/* sc-component-id: ItemGroup__GroupTitleAfter-ofbfv9-1 */
+
+/* sc-component-id: ItemGroup__GroupTitleText-ofbfv9-2 */
+
+/* sc-component-id: Icon__IconWrapper-dyhwwi-0 */
+
+/* sc-component-id: styled__TooltipPrimitive-fadon5-0 */
+</style><style data-styled-components="">
+/* sc-component-id: styled__Tooltip-fadon5-1 */
+
+/* sc-component-id: styled__Target-fadon5-2 */
+
+/* sc-component-id: Item__Anchor-aiqnor-0 */
+
+/* sc-component-id: Item__Span-aiqnor-1 */
+
+/* sc-component-id: Item__InputWrapper-aiqnor-2 */
+
+/* sc-component-id: Item__Before-aiqnor-3 */
+
+/* sc-component-id: Item__After-aiqnor-4 */
+
+/* sc-component-id: Item__ContentWrapper-aiqnor-5 */
+
+/* sc-component-id: Item__Content-aiqnor-6 */
+
+/* sc-component-id: Item__Description-aiqnor-7 */
+
+/* sc-component-id: Item__SecondaryText-aiqnor-8 */
+
+/* sc-component-id: Group-sc-1q26u8b-0 */
+
+/* sc-component-id: Group__Heading-sc-1q26u8b-1 */
+
+/* sc-component-id: Group__HeadingAfter-sc-1q26u8b-2 */
+
+/* sc-component-id: Group__HeadingText-sc-1q26u8b-3 */
+
+/* sc-component-id: WidthConstrainer-sc-15doeus-0 */
+
+/* sc-component-id: sc-bZQynM */
+
+/* sc-component-id: sc-gzVnrw */
+
+/* sc-component-id: sc-htoDjs */
+
+/* sc-component-id: sc-dnqmqq */
+
+/* sc-component-id: sc-iwsKbI */
+
+/* sc-component-id: sc-gZMcBi */
+
+/* sc-component-id: sc-gqjmRU */
+
+/* sc-component-id: sc-VigVT */
+
+/* sc-component-id: sc-jTzLTM */
+
+/* sc-component-id: sc-fjdhpX */
+
+/* sc-component-id: sc-jzJRlG */
+
+/* sc-component-id: sc-cSHVUG */
+
+/* sc-component-id: sc-kAzzGY */
+
+/* sc-component-id: sc-chPdSV */
+
+/* sc-component-id: sc-kgoBCf */
+
+/* sc-component-id: sc-kGXeez */
+
+/* sc-component-id: sc-kpOJdX */
+
+/* sc-component-id: sc-dxgOiQ */
+
+/* sc-component-id: sc-ckVGcZ */
+
+/* sc-component-id: Icon__Outer-sc-1i6jzcz-0 */
+
+/* sc-component-id: Icon__Inner-sc-1i6jzcz-1 */
+
+/* sc-component-id: getPresenceSVG__BusyCircle-sc-1k153k9-0 */
+
+/* sc-component-id: getPresenceSVG__BusyPath-sc-1k153k9-1 */
+
+/* sc-component-id: getPresenceSVG__FocusPath-sc-1k153k9-2 */
+</style><style data-styled-components="">
+/* sc-component-id: getPresenceSVG__OfflineOuter-sc-1k153k9-3 */
+
+/* sc-component-id: getPresenceSVG__OfflineInner-sc-1k153k9-4 */
+
+/* sc-component-id: getPresenceSVG__OnlineCircle-sc-1k153k9-5 */
+
+/* sc-component-id: AvatarImage__ShapeGroup-sc-1hf6c4m-0 */
+
+/* sc-component-id: getStatusSVG__ApprovedCircle-kqelaq-0 */
+
+/* sc-component-id: getStatusSVG__ApprovedPath-kqelaq-1 */
+
+/* sc-component-id: getStatusSVG__DeclinedCircle-kqelaq-2 */
+
+/* sc-component-id: getStatusSVG__DeclinedPath-kqelaq-3 */
+
+/* sc-component-id: getStatusSVG__LockedCircle-kqelaq-4 */
+
+/* sc-component-id: getStatusSVG__LockedPath-kqelaq-5 */
+
+/* sc-component-id: Avatar__Inner-r9c9gb-0 */
+
+/* sc-component-id: styledCache__StyledCustomComponent-zohhd2-0 */
+
+/* sc-component-id: styledCache__StyledButton-zohhd2-1 */
+
+/* sc-component-id: styledCache__StyledLink-zohhd2-2 */
+
+/* sc-component-id: styledCache__StyledSpan-zohhd2-3 */
+
+/* sc-component-id: AvatarItem__Content-sc-189r3pd-0 */
+
+/* sc-component-id: AvatarItem__PrimaryText-sc-189r3pd-1 */
+
+/* sc-component-id: AvatarItem__SecondaryText-sc-189r3pd-2 */
+
+/* sc-component-id: Skeleton-sc-1wbn63x-0 */
+
+/* sc-component-id: sc-jKJlTe */
+
+/* sc-component-id: sc-eNQAEJ */
+
+/* sc-component-id: sc-hMqMXs */
+
+/* sc-component-id: sc-kEYyzF */
+
+/* sc-component-id: sc-kkGfuU */
+
+/* sc-component-id: sc-iAyFgw */
+
+/* sc-component-id: sc-hSdWYo */
+
+/* sc-component-id: sc-eHgmQL */
+</style><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/f.txt"></script><script type="text/javascript" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/ei_track_all_packed.js"></script></head>
+<body id="git" class="wac git-home git scrolled hoverable"><div class="optanon-alert-box-wrapper  " role="alertdialog" aria-labelledby="alert-box-title" aria-describedby="alert-box-message" style="bottom: 0px; display: none;"><div class="optanon-alert-box-bottom-top"><div class="optanon-alert-box-corner-close"><button class="optanon-alert-box-close banner-close-button" aria-label="Close" title="Close" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Banner Close Button&#39;);" tabindex="4"></button></div></div><div class="optanon-alert-box-bg"><div class="optanon-alert-box-logo"> </div><div class="optanon-alert-box-body"><p class="optanon-alert-box-title legacy-banner-title sr-only" id="alert-box-title" role="heading" aria-level="2">Cookie Notice</p><p class="banner-content" id="alert-box-message">This site uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. To change your preferences, click Cookie Settings. Otherwise, clicking on the the website, closing the banner, or clicking Accept all Cookies indicates you agree to our use of cookies on your device.    <a href="https://www.atlassian.com/legal/cookies" class="banner-policy-link" tabindex="1" aria-label="Atlassian Cookies and Tracking Notice">Atlassian Cookies and Tracking Notice</a></p></div><div class="optanon-clearfix"></div><div class="optanon-alert-box-button-container"><div class="optanon-alert-box-button optanon-button-close"><div class="optanon-alert-box-button-middle"><button class="optanon-alert-box-close" aria-label="Close">Close</button></div></div><div class="optanon-alert-box-button optanon-button-allow"><div class="optanon-alert-box-button-middle accept-cookie-container"><button class="optanon-allow-all accept-cookies-button" title="Accept all Cookies" aria-label="Accept all Cookies" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Banner Accept Cookies&#39;);" tabindex="3">Accept all Cookies</button></div></div><div class="optanon-alert-box-button optanon-button-more"><div class="optanon-alert-box-button-middle"><button class="optanon-toggle-display cookie-settings-button" title="Cookie Settings" aria-label="Cookie Settings" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Banner Open Preferences&#39;);" tabindex="2">Cookie Settings</button></div></div></div><div class="optanon-clearfix optanon-alert-box-bottom-padding"></div></div></div><div id="optanon" class="modern"><div id="optanon-popup-bg" style="display: none;"></div><div id="optanon-popup-wrapper" role="dialog" aria-modal="true" tabindex="-1"><div id="optanon-popup-top"><button onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Preferences Close Button&#39;);" aria-label="Close" class="optanon-close-link optanon-close optanon-close-ui" title="Close"><div id="optanon-close" style="background: url(https://cdn.cookielaw.org/skins/4.3.3/default_flat_bottom_two_button_black/v2/images/optanon-pop-up-close.png);width:34px;height:34px;"></div></button></div><div id="optanon-popup-body"><div id="optanon-popup-body-left"><div id="optanon-popup-body-left-shading"></div><div id="optanon-branding-top-logo" style="background-image: url(&#39;https://cdn.cookielaw.org/logos/5878/5878:atlassian.com/Atlassian%20white%20logo.png&#39;) !important;"></div><ul id="optanon-menu" aria-label="Navigation Menu" role="tablist"><li class="menu-item-on menu-item-about" title="Your Privacy"><p class="preference-menu-item"><button role="tab" aria-selected="true" aria-controls="tab-0" id="Your-Privacy">Your Privacy</button></p></li><li class="menu-item-necessary menu-item-on" title="Strictly Necessary Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="tab-3" id="Strictly-Necessary">Strictly Necessary Cookies</button></p></li><li class="menu-item-on menu-item-performance" title="Performance and Analytics Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="tab-4" id="Performance-and">Performance and Analytics Cookies</button></p></li><li class="menu-item-on menu-item-functional" title="Functional Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="tab-8" id="Functional-Cookies">Functional Cookies</button></p></li><li class="menu-item-on menu-item-advertising" title="Targeting Cookies"><p class="preference-menu-item"><button role="tab" aria-selected="false" aria-controls="tab-12" id="Targeting-Cookies">Targeting Cookies</button></p></li><li class="menu-item-moreinfo menu-item-on" title="Atlassian Cookies and Tracking Notice"><p class="preference-menu-item"><a target="_blank" aria-label="Atlassian Cookies and Tracking Notice" href="https://www.atlassian.com/legal/cookies" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Preferences Cookie Policy&#39;);">Atlassian Cookies and Tracking Notice</a></p></li></ul></div><div id="optanon-popup-body-right"><p role="heading" aria-level="2" class="legacy-preference-banner-title h2" aria-label="Privacy Preference Centre">Privacy Preference Centre</p><div class="vendor-header-container"><p class="header-3" role="heading" aria-level="3"></p><div id="optanon-popup-more-info-bar"><div class="optanon-status"><div class="optanon-status-editable"><form><span class="fieldset"><p><input type="checkbox" value="check" id="chkMain" checked="" class="legacy-group-status optanon-status-checkbox"><label for="chkMain">Active</label></p></span></form></div><div class="optanon-status-always-active optanon-status-on"><p>Always Active</p></div></div></div></div><div class="optanon-main-info-text" role="tabpanel"></div></div><div class="optanon-bottom-spacer"></div></div><div id="optanon-popup-bottom"> <a href="https://onetrust.com/poweredbyonetrust" target="_blank"><div id="optanon-popup-bottom-logo" style="background: url(https://cdn.cookielaw.org/skins/4.3.3/default_flat_bottom_two_button_black/v2/images/cookie-collective-top-bottom.png);width:155px;height:35px;" title="powered by OneTrust"></div></a><div class="optanon-button-wrapper optanon-save-settings-button optanon-close optanon-close-consent"><div class="optanon-white-button-left"></div><div class="optanon-white-button-middle"><button title="Save Settings" aria-label="Save Settings" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Preferences Save Settings&#39;);">Save Settings</button></div><div class="optanon-white-button-right"></div></div><div class="optanon-button-wrapper optanon-allow-all-button optanon-allow-all" style="display: none;"><div class="optanon-white-button-left"></div><div class="optanon-white-button-middle"><button title="Allow All" aria-label="Allow All" onclick="Optanon.TriggerGoogleAnalyticsEvent(&#39;OneTrust Cookie Consent&#39;, &#39;Preferences Allow All&#39;);">Allow All</button></div><div class="optanon-white-button-right"></div></div></div></div></div>
+<div id="header">
+<div class="tutorial-sidebar ">
+<div class="_bumper"></div>
+<div class="_wrap">
+<ol>
+<div class="_group">
+<a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud" class="cms-link cms-link--text group-link">Learn Git</a>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud" class="cms-link cms-link--text tutorial-link">Learn Git with Bitbucket Cloud</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud#create-the-repository" class="cms-link cms-link--text section-link">Create a Git repository</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud#copy-and-add-files" class="cms-link cms-link--text section-link">Copy your Git repository and add files</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud#pull-changes" class="cms-link cms-link--text section-link">Pull changes from your Git repository on Bitbucket Cloud</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud#git-branch-to-merge" class="cms-link cms-link--text section-link">Use a Git branch to merge a file</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud" class="cms-link cms-link--text tutorial-link">Learn about code review in Bitbucket Cloud</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud#create-repository" class="cms-link cms-link--text section-link">Create a repository and add a teammate</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud#clone-branch" class="cms-link cms-link--text section-link">Clone and make a change on a new branch</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud#im-using-git" class="cms-link cms-link--text section-link">If you're using command line</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud#im-using-sourcetree" class="cms-link cms-link--text section-link">If you're using Sourcetree</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/learn-branching-with-bitbucket-cloud" class="cms-link cms-link--text tutorial-link">Learn branching in Bitbucket Cloud</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/learn-branching-with-bitbucket-cloud#create-the-repository" class="cms-link cms-link--text section-link">Get set up</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-branching-with-bitbucket-cloud#review-branching-workflow" class="cms-link cms-link--text section-link">Review branching workflow</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/learn-undoing-changes-with-bitbucket" class="cms-link cms-link--text tutorial-link">Learn undoing changes with Bitbucket Cloud</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/learn-undoing-changes-with-bitbucket#git-status" class="cms-link cms-link--text section-link">git status</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-undoing-changes-with-bitbucket#git-log" class="cms-link cms-link--text section-link">git log</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-undoing-changes-with-bitbucket#git-reset" class="cms-link cms-link--text section-link">git reset</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-undoing-changes-with-bitbucket#git-revert" class="cms-link cms-link--text section-link">git revert</a>
+</div>
+</div>
+</div>
+<div class="_group">
+<a href="https://www.atlassian.com/git/tutorials/what-is-version-control" class="cms-link cms-link--text group-link">Beginner</a>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/what-is-version-control" class="cms-link cms-link--text tutorial-link">What is version control</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/what-is-version-control#benefits-of-version-control" class="cms-link cms-link--text section-link">Benefits of version control</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/what-is-git" class="cms-link cms-link--text tutorial-link">What is Git</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/what-is-git#performance" class="cms-link cms-link--text section-link">Performance</a>
+<a href="https://www.atlassian.com/git/tutorials/what-is-git#security" class="cms-link cms-link--text section-link">Security</a>
+<a href="https://www.atlassian.com/git/tutorials/what-is-git#flexibility" class="cms-link cms-link--text section-link">Flexibility</a>
+<a href="https://www.atlassian.com/git/tutorials/what-is-git#version-control-with-git" class="cms-link cms-link--text section-link">Version control with Git</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/why-git" class="cms-link cms-link--text tutorial-link">Why Git for your Organization</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/why-git#git-for-developers" class="cms-link cms-link--text section-link">Git for developers</a>
+<a href="https://www.atlassian.com/git/tutorials/why-git#git-for-marketing" class="cms-link cms-link--text section-link">Git for marketing</a>
+<a href="https://www.atlassian.com/git/tutorials/why-git#git-for-product-management" class="cms-link cms-link--text section-link">Git for product management</a>
+<a href="https://www.atlassian.com/git/tutorials/why-git#git-for-designers" class="cms-link cms-link--text section-link">Git for designers</a>
+<a href="https://www.atlassian.com/git/tutorials/why-git#git-for-customer-support" class="cms-link cms-link--text section-link">Git for customer support</a>
+<a href="https://www.atlassian.com/git/tutorials/why-git#git-for-human-resources" class="cms-link cms-link--text section-link">Git for human resources</a>
+<a href="https://www.atlassian.com/git/tutorials/why-git#git-for-anyone-managing-budget" class="cms-link cms-link--text section-link">Git for anyone managing a budget</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/install-git" class="cms-link cms-link--text tutorial-link">Install Git</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/install-git#mac-os-x" class="cms-link cms-link--text section-link">Install Git on Mac OS X</a>
+<a href="https://www.atlassian.com/git/tutorials/install-git#windows" class="cms-link cms-link--text section-link">Install Git on Windows</a>
+<a href="https://www.atlassian.com/git/tutorials/install-git#linux" class="cms-link cms-link--text section-link">Install Git on Linux</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" class="cms-link cms-link--text tutorial-link">Git Cheatsheet</a>
+</div>
+</div>
+<div class="_group">
+<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository" class="cms-link cms-link--text group-link">Getting Started</a>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository" class="cms-link cms-link--text tutorial-link">Setting up a repository</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init" class="cms-link cms-link--text section-link">git init</a>
+<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone" class="cms-link cms-link--text section-link">git clone</a>
+<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config" class="cms-link cms-link--text section-link">git config</a>
+<a href="https://www.atlassian.com/git/tutorials/git-alias" class="cms-link cms-link--text section-link">git alias</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/saving-changes" class="cms-link cms-link--text tutorial-link">Saving changes</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/saving-changes" class="cms-link cms-link--text section-link">git add</a>
+<a href="https://www.atlassian.com/git/tutorials/saving-changes/git-commit" class="cms-link cms-link--text section-link">git commit</a>
+<a href="https://www.atlassian.com/git/tutorials/saving-changes/git-diff" class="cms-link cms-link--text section-link">git diff</a>
+<a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash" class="cms-link cms-link--text section-link">git stash</a>
+<a href="https://www.atlassian.com/git/tutorials/saving-changes/gitignore" class="cms-link cms-link--text section-link">.gitignore</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository" class="cms-link cms-link--text tutorial-link">Inspecting a repository</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository" class="cms-link cms-link--text section-link">git status</a>
+<a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag" class="cms-link cms-link--text section-link">git tag</a>
+<a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-blame" class="cms-link cms-link--text section-link">git blame</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/undoing-changes" class="cms-link cms-link--text tutorial-link">Undoing changes</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/undoing-changes" class="cms-link cms-link--text section-link">git checkout</a>
+<a href="https://www.atlassian.com/git/tutorials/undoing-changes/git-clean" class="cms-link cms-link--text section-link">git clean</a>
+<a href="https://www.atlassian.com/git/tutorials/undoing-changes/git-revert" class="cms-link cms-link--text section-link">git revert</a>
+<a href="https://www.atlassian.com/git/tutorials/undoing-changes/git-reset" class="cms-link cms-link--text section-link">git reset</a>
+<a href="https://www.atlassian.com/git/tutorials/undoing-changes/git-rm" class="cms-link cms-link--text section-link">git rm</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/rewriting-history" class="cms-link cms-link--text tutorial-link">Rewriting history</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/rewriting-history#git-commit--amend" class="cms-link cms-link--text section-link">git commit --amend</a>
+<a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase" class="cms-link cms-link--text section-link">git rebase</a>
+<a href="https://www.atlassian.com/git/tutorials/rewriting-history#git-rebase-i" class="cms-link cms-link--text section-link">git rebase -i</a>
+<a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog" class="cms-link cms-link--text section-link">git reflog</a>
+</div>
+</div>
+</div>
+<div class="_group">
+<a href="https://www.atlassian.com/git/tutorials/syncing" class="cms-link cms-link--text group-link">Collaborating</a>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/syncing" class="cms-link cms-link--text tutorial-link">Syncing</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/syncing" class="cms-link cms-link--text section-link">git remote</a>
+<a href="https://www.atlassian.com/git/tutorials/syncing/git-fetch" class="cms-link cms-link--text section-link">git fetch</a>
+<a href="https://www.atlassian.com/git/tutorials/syncing/git-push" class="cms-link cms-link--text section-link">git push</a>
+<a href="https://www.atlassian.com/git/tutorials/syncing/git-pull" class="cms-link cms-link--text section-link">git pull</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/making-a-pull-request" class="cms-link cms-link--text tutorial-link">Making a Pull Request</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/making-a-pull-request#how-it-works" class="cms-link cms-link--text section-link">How it works</a>
+<a href="https://www.atlassian.com/git/tutorials/making-a-pull-request#example" class="cms-link cms-link--text section-link">Example</a>
+<a href="https://www.atlassian.com/git/tutorials/making-a-pull-request#where-to-go" class="cms-link cms-link--text section-link">Where to go from here</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/using-branches" class="cms-link cms-link--text tutorial-link">Using branches</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/using-branches" class="cms-link cms-link--text section-link">git branch</a>
+<a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout" class="cms-link cms-link--text section-link">git checkout</a>
+<a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge" class="cms-link cms-link--text section-link">git merge</a>
+<a href="https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts" class="cms-link cms-link--text section-link">Merge conflicts</a>
+<a href="https://www.atlassian.com/git/tutorials/using-branches/merge-strategy" class="cms-link cms-link--text section-link">Merge strategies</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows" class="cms-link cms-link--text tutorial-link">Comparing workflows</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow" class="cms-link cms-link--text section-link">Centralized Workflow</a>
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow" class="cms-link cms-link--text section-link">Feature Branch Workflow</a>
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" class="cms-link cms-link--text section-link">Gitflow Workflow</a>
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow" class="cms-link cms-link--text section-link">Forking Workflow</a>
+</div>
+</div>
+</div>
+<div class="_group">
+<a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration" class="cms-link cms-link--text group-link">Migrating to Git</a>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration" class="cms-link cms-link--text tutorial-link">SVN to Git - prepping for the migration</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration#for-administrators" class="cms-link cms-link--text section-link">For administrators</a>
+<a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration#basic-git-commands" class="cms-link cms-link--text section-link">Basic Git commands</a>
+<a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration#git-migration-tools" class="cms-link cms-link--text section-link">Git Migration Tools</a>
+<a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration#for-developers" class="cms-link cms-link--text section-link">For developers</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/migrating-overview" class="cms-link cms-link--text tutorial-link">Migrate to Git from SVN</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/migrating-prepare" class="cms-link cms-link--text tutorial-link">Prepare</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/migrating-convert" class="cms-link cms-link--text tutorial-link">Convert</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/migrating-synchronize" class="cms-link cms-link--text tutorial-link">Synchronize</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/migrating-share" class="cms-link cms-link--text tutorial-link">Share</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/migrating-migrate" class="cms-link cms-link--text tutorial-link">Migrate</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/perforce-git" class="cms-link cms-link--text tutorial-link">Perforce to Git - why to make the move</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/perforce-git-migration" class="cms-link cms-link--text tutorial-link">Migrating from Perforce to Git</a>
+</div>
+</div>
+<div class="_group">
+<a href="https://www.atlassian.com/git/tutorials/advanced-overview" class="cms-link cms-link--text group-link">Advanced Tips</a>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/advanced-overview" class="cms-link cms-link--text tutorial-link">Advanced Git Tutorials</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" class="cms-link cms-link--text tutorial-link">Merging vs. Rebasing</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing#conceptual-overview" class="cms-link cms-link--text section-link">Conceptual Overview</a>
+<a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing" class="cms-link cms-link--text section-link">The Golden Rule of Rebasing</a>
+<a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing#workflow-walkthrough" class="cms-link cms-link--text section-link">Workflow Walkthrough</a>
+<a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing#summary" class="cms-link cms-link--text section-link">Summary</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting" class="cms-link cms-link--text tutorial-link">Resetting, Checking Out, and Reverting</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/git-log" class="cms-link cms-link--text tutorial-link">Advanced Git log</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/git-log#formatting-log-output" class="cms-link cms-link--text section-link">Formatting Log Output</a>
+<a href="https://www.atlassian.com/git/tutorials/git-log#filtering-the-commit-history" class="cms-link cms-link--text section-link">Filtering the Commit History</a>
+<a href="https://www.atlassian.com/git/tutorials/git-log#summary" class="cms-link cms-link--text section-link">Summary</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/git-hooks" class="cms-link cms-link--text tutorial-link">Git Hooks</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/git-hooks#conceptual-overview" class="cms-link cms-link--text section-link">Conceptual Overview</a>
+<a href="https://www.atlassian.com/git/tutorials/git-hooks#local-hooks" class="cms-link cms-link--text section-link">Local Hooks</a>
+<a href="https://www.atlassian.com/git/tutorials/git-hooks#server-side-hooks" class="cms-link cms-link--text section-link">Server-side Hooks</a>
+<a href="https://www.atlassian.com/git/tutorials/git-hooks#summary" class="cms-link cms-link--text section-link">Summary</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog" class="cms-link cms-link--text tutorial-link">Refs and the Reflog</a>
+<div class="_toc">
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog#hashes" class="cms-link cms-link--text section-link">Hashes</a>
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog#refs" class="cms-link cms-link--text section-link">Refs</a>
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog#packed-refs" class="cms-link cms-link--text section-link">Packed Refs</a>
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog#special-refs" class="cms-link cms-link--text section-link">Special Refs</a>
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog#refspecs" class="cms-link cms-link--text section-link">Refspecs</a>
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog#relative-refs" class="cms-link cms-link--text section-link">Relative Refs</a>
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog#the-reflog" class="cms-link cms-link--text section-link">The Reflog</a>
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog#summary" class="cms-link cms-link--text section-link">Summary</a>
+</div>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/git-lfs" class="cms-link cms-link--text tutorial-link">Git LFS</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/git-gc" class="cms-link cms-link--text tutorial-link">Git gc</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/git-prune" class="cms-link cms-link--text tutorial-link">Git prune</a>
+</div>
+<div class="_group-wrap">
+<a href="https://www.atlassian.com/git/tutorials/git-bash" class="cms-link cms-link--text tutorial-link">Git Bash</a>
+</div>
+</div>
+</ol>
+</div>
+</div>
+<div class="hamburger">
+<div class="_layer -top"></div>
+<div class="_layer -mid"></div>
+<div class="_layer -bottom"></div>
+</div>
+<div class="primary-nav">
+<div class="_wrapper">
+<ul class="_nav-list">
+<div>
+<li>
+<a href="https://www.atlassian.com/git" class="cms-link cms-link--text _nav-item -home">Home</a>
+</li>
+</div>
+<div>
+<li class="tutorials-nav" id="tutorials-nav-mobile">
+<h4 class="_nav-item -tutorials">Tutorials</h4>
+<div class="_sublist">  <ol>        <li class="_group">      <h5>Learn Git</h5>      <ol class="_group-wrap">                <li>          <a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud">Learn Git with Bitbucket Cloud</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud">Learn about code review in Bitbucket Cloud</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/learn-branching-with-bitbucket-cloud">Learn branching in Bitbucket Cloud</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/learn-undoing-changes-with-bitbucket">Learn undoing changes with Bitbucket Cloud</a>        </li>              </ol>    </li>        <li class="_group">      <h5>Beginner</h5>      <ol class="_group-wrap">                <li>          <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">What is version control</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/what-is-git">What is Git</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/why-git">Why Git for your Organization</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/install-git">Install Git</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet">Git Cheatsheet</a>        </li>              </ol>    </li>        <li class="_group">      <h5>Getting Started</h5>      <ol class="_group-wrap">                <li>          <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository">Setting up a repository</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/saving-changes">Saving changes</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository">Inspecting a repository</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/undoing-changes">Undoing changes</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/rewriting-history">Rewriting history</a>        </li>              </ol>    </li>        <li class="_group">      <h5>Collaborating</h5>      <ol class="_group-wrap">                <li>          <a href="https://www.atlassian.com/git/tutorials/syncing">Syncing</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/making-a-pull-request">Making a Pull Request</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/using-branches">Using branches</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Comparing workflows</a>        </li>              </ol>    </li>        <li class="_group">      <h5>Migrating to Git</h5>      <ol class="_group-wrap">                <li>          <a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration">SVN to Git - prepping for the migration</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/migrating-overview">Migrate to Git from SVN</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/migrating-prepare">Prepare</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/migrating-convert">Convert</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/migrating-synchronize">Synchronize</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/migrating-share">Share</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/migrating-migrate">Migrate</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/perforce-git">Perforce to Git - why to make the move</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/perforce-git-migration">Migrating from Perforce to Git</a>        </li>              </ol>    </li>        <li class="_group">      <h5>Advanced Tips</h5>      <ol class="_group-wrap">                <li>          <a href="https://www.atlassian.com/git/tutorials/advanced-overview">Advanced Git Tutorials</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">Merging vs. Rebasing</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting">Resetting, Checking Out, and Reverting</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/git-log">Advanced Git log</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/git-hooks">Git Hooks</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog">Refs and the Reflog</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/git-lfs">Git LFS</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/git-gc">Git gc</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/git-prune">Git prune</a>        </li>                <li>          <a href="https://www.atlassian.com/git/tutorials/git-bash">Git Bash</a>        </li>              </ol>    </li>      </ol>  </div>
+</li>
+<li>
+<a href="https://www.atlassian.com/git/tutorials" class="cms-link cms-link--text _nav-item -tutorials">Tutorials</a>
+</li>
+</div>
+<div>
+<li>
+<a href="https://www.atlassian.com/git/articles" class="cms-link cms-link--text _nav-item -articles">Articles</a>
+</li>
+</div>
+<div>
+<li>
+<a href="https://www.atlassian.com/git/glossary" class="cms-link cms-link--text _nav-item -glossary">Glossary</a>
+</li>
+</div>
+</ul>
+</div>
+</div>
+<div class="topbar home">
+<div class="_header -home">
+<a href="https://www.atlassian.com/git" class="active">Getting Git Right</a>
+</div>
+</div>
+<form class="newsletter">
+<input class="is-empty _input" type="email" placeholder="Enter Your Email For Git News">
+<button type="submit" class="_status icon-email-submit">Submit</button>
+</form>
+<a href="https://www.atlassian.com/git#footer" class="button green-hollow secondary newsletter-cta">Sign up</a>
+<a href="https://www.atlassian.com/git/search" class="search-button search-open ">
+<span class="_link icon-search">Search</span>
+</a>
+<a href="https://www.atlassian.com/git" class="search-button search-close -in-page hidden">
+<span class="_link icon-search-close -close">Search</span>
+</a>
+</div>
+<div class="page-wrap ">
+<div id="content" class="_content">
+<div class="home-banner">
+<div class="g-row">
+<div class="g-column g-12-12 t-12-12 m-12-12 _hero-wrapper g-centered text-center">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/hero (1).svg" alt="Getting Git Right" class="svg">
+<h1 class="_title icon-home-arrow-more">Getting Git right, with tutorials, news and tips.</h1>
+</div></div>
+</div>
+<div class="home-section home-about home-start">
+<div class="g-row container">
+<div class="g-column g-7-12 t-6-12 m-12-12">
+<h2>Git basics</h2>
+<p>Git is a free and open source version control system, originally created by Linus Torvalds in 2005. Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally. This makes the initial clone of the repository slower, but subsequent operations such as commit, blame, diff, merge, and log dramatically faster.</p>
+<p>Git also has excellent support for branching, merging, and rewriting repository history, which has lead to many innovative and powerful workflows and tools. Pull requests are one such popular tool that allow teams to collaborate on Git branches and efficiently review each others code. Git is the most widely used version control system in the world today and is considered the modern standard for software development.</p>
+<h2>How Git works</h2>
+<p>Here is a basic overview of how Git works:</p>
+<ol>
+<li>Create a "repository" (project) with a git hosting tool (like Bitbucket)</li>
+<li>Copy (or clone) the repository to your local machine</li>
+<li>Add a file to your local repo and "commit" (save) the changes</li>
+<li>"Push" your changes to your master branch</li>
+<li>Make a change to your file with a git hosting tool and commit</li>
+<li>"Pull" the changes to your local machine</li>
+<li>Create a "branch" (version), make a change, commit the change</li>
+<li>Open a "pull request" (propose changes to the master branch)</li>
+<li>"Merge" your branch to the master branch</li>
+</ol>
+<a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud" class="button green-hollow secondary">Get started with Git</a>
+</div><div class="g-column g-4-12 t-6-12 m-12-12">
+<div class="home-about--git-download-block">
+<h3>Git Download</h3>
+<p>Mac OS/X</p>
+<a href="https://www.atlassian.com/git/tutorials/install-git?section=git-for-mac-installer" class="cms-link cms-link--text">Download Installer</a>
+<a href="https://www.atlassian.com/git/tutorials/install-git?section=homebrew" class="cms-link cms-link--text">Homebrew</a>
+<a href="https://www.atlassian.com/git/tutorials/install-git?section=macports" class="cms-link cms-link--text">MacPorts</a>
+<a href="https://www.sourcetreeapp.com/download/" class="cms-link cms-link--text">Sourcetree</a>
+<a href="https://www.atlassian.com/git/tutorials/install-git?section=build-git-from-source-on-os-x" class="cms-link cms-link--text">Build Git on Mac OS X</a>
+<p>Windows</p>
+<a href="https://www.atlassian.com/git/tutorials/install-git?section=windows" class="cms-link cms-link--text">Git for Windows</a>
+<a href="https://www.sourcetreeapp.com/download/" class="cms-link cms-link--text">Sourcetree</a>
+<p>Linux</p>
+<a href="https://www.atlassian.com/git/tutorials/install-git?section=debian-ubuntu" class="cms-link cms-link--text">Debian / Ubuntu (apt-get)</a>
+<a href="https://www.atlassian.com/git/tutorials/install-git?section=fedora" class="cms-link cms-link--text">Fedora (yum)</a>
+<a href="https://www.atlassian.com/git/tutorials/install-git?section=build-git-from-source-on-linux" class="cms-link cms-link--text">Build from source</a>
+</div>
+</div></div>
+</div>
+<div class="g-row home-section -popular">
+<div class="container">
+<div class="g-column g-3-12 t-5-12 m-12-12 g-centered text-center">
+<h3 class="_label">Learn Git</h3>
+</div><div class="g-column g-12-12 t-12-12 m-12-12 home-popular">
+<div class="g-row _sections">
+<div class="g-column g-4-12 t-6-12 m-10-12 _group">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/git-hompage-interaction-48x48-01.svg" alt="Learn Git">
+<h5 class="_heading">Learn Git</h5>
+<a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud" class="cms-link cms-link--text">Learn Git with Bitbucket Cloud</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud" class="cms-link cms-link--text">Learn about code review in Bitbucket Cloud</a>
+<a href="https://www.atlassian.com/git/tutorials/learn-branching-with-bitbucket-cloud" class="cms-link cms-link--text">Learn Branching with Bitbucket Cloud</a>
+</div><div class="g-column g-4-12 t-6-12 m-10-12 _group">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/git-hompage-beginner-48x48-01.svg" alt="Git Beginner">
+<h5 class="_heading">Beginner</h5>
+<a href="https://www.atlassian.com/git/tutorials/what-is-version-control" class="cms-link cms-link--text">What is version control</a>
+<a href="https://www.atlassian.com/git/tutorials/what-is-git" class="cms-link cms-link--text">What is Git</a>
+<a href="https://www.atlassian.com/git/tutorials/why-git" class="cms-link cms-link--text">Why Git for your organization</a>
+<a href="https://www.atlassian.com/git/tutorials/install-git" class="cms-link cms-link--text">Install Git</a>
+<a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" class="cms-link cms-link--text">Git cheat sheet</a>
+</div><div class="g-column g-4-12 t-6-12 m-10-12 _group">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/git-hompage-getting-started-48x48-02.svg" alt="Getting Started">
+<h5 class="_heading">Getting Started</h5>
+<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository" class="cms-link cms-link--text">Setting up a repository</a>
+<a href="https://www.atlassian.com/git/tutorials/saving-changes" class="cms-link cms-link--text">Saving changes</a>
+<a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository" class="cms-link cms-link--text">Inspecting a repository</a>
+<a href="https://www.atlassian.com/git/tutorials/undoing-changes" class="cms-link cms-link--text">Undoing changes</a>
+<a href="https://www.atlassian.com/git/tutorials/rewriting-history" class="cms-link cms-link--text">Rewriting history</a>
+</div><div class="g-column g-4-12 t-6-12 m-10-12 _group">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/git-hompage-collaborating-48x48-04.svg" alt="Collaborating">
+<h5 class="_heading">Collaborating</h5>
+<a href="https://www.atlassian.com/git/tutorials/syncing" class="cms-link cms-link--text">Syncing</a>
+<a href="https://www.atlassian.com/git/tutorials/making-a-pull-request" class="cms-link cms-link--text">Making a Pull Request</a>
+<a href="https://www.atlassian.com/git/tutorials/using-branches" class="cms-link cms-link--text">Using Branches</a>
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows" class="cms-link cms-link--text">Comparing Workflows</a>
+</div><div class="g-column g-4-12 t-6-12 m-10-12 _group">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/git-hompage-migrating-to-git-48x48-03.svg" alt="Migrating to Git">
+<h5 class="_heading">Migrating to Git</h5>
+<a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration" class="cms-link cms-link--text">SVN to Git - prepping for the migration</a>
+<a href="https://www.atlassian.com/git/tutorials/migrating-overview" class="cms-link cms-link--text">Migrate to Git from SVN</a>
+<a href="https://www.atlassian.com/git/tutorials/perforce-git" class="cms-link cms-link--text">Perforce to Git - why to make the move</a>
+<a href="https://www.atlassian.com/git/tutorials/perforce-git-migration" class="cms-link cms-link--text">Migrating from Perforce to Git</a>
+</div><div class="g-column g-4-12 t-6-12 m-10-12 _group">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/git-hompage-advanced-tips-48x48-05.svg" alt="Advanced Tips">
+<h5 class="_heading">Advanced Tips</h5>
+<a href="https://www.atlassian.com/git/tutorials/advanced-overview" class="cms-link cms-link--text">Advanced Git Tutorials</a>
+<a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" class="cms-link cms-link--text">Merging vs. Rebasing</a>
+<a href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting" class="cms-link cms-link--text">Reset, Checkout, and Revert</a>
+<a href="https://www.atlassian.com/git/tutorials/git-log" class="cms-link cms-link--text">Advanced Git log</a>
+<a href="https://www.atlassian.com/git/tutorials/git-hooks" class="cms-link cms-link--text">Git Hooks</a>
+<a href="https://www.atlassian.com/git/tutorials/refs-and-the-reflog" class="cms-link cms-link--text">Refs and the Reflog</a>
+<a href="https://www.atlassian.com/git/tutorials/git-lfs" class="cms-link cms-link--text">Git LFS</a>
+</div></div>
+<div class="g-row">
+<div class="g-column g-12-12 t-12-12 m-12-12">
+<a href="https://www.atlassian.com/git/tutorials" class="cms-link cms-link--text see-all">See all tutorials</a>
+</div></div>
+</div></div>
+</div>
+<div class="g-row home-section -posts">
+<div class="container home-post">
+<div class="g-column g-3-12 t-5-12 m-12-12 g-centered text-center">
+<h3 class="_label">Top Posts</h3>
+</div><div class="g-column g-8-12 t-12-12 m-10-12 _item clear g-centered text-center">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/sarah-goff-dupont.png" alt="Sarah Goff-Dupont" class="_avatar">
+<h6>Sarah Goff-Dupont</h6>
+<a href="https://www.atlassian.com/git/articles/ci-friendly-git-repos" class="cms-link cms-link--text"><h3>Five tips for CI-friendly Git repos</h3></a>
+<a href="https://www.atlassian.com/git/articles/ci-friendly-git-repos" class="cms-link cms-link--text">Read article</a>
+</div><div class="g-column g-8-12 t-12-12 m-10-12 _item clear g-centered text-center">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/matt-shelton.png" alt="Matt Shelton" class="_avatar">
+<h6>Matt Shelton</h6>
+<a href="https://www.atlassian.com/git/articles/git-or-svn-git-branching-model" class="cms-link cms-link--text"><h3>Git or SVN? How Nuance Healthcare chose a Git branching model?</h3></a>
+<a href="https://www.atlassian.com/git/articles/git-or-svn-git-branching-model" class="cms-link cms-link--text">Read article</a>
+</div><div class="g-column g-8-12 t-12-12 m-10-12 _item clear g-centered text-center">
+<img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/matt-shelton.png" alt="Matt Shelton" class="_avatar">
+<h6>Matt Shelton</h6>
+<a href="https://www.atlassian.com/git/articles/maven-dependencies-versions-merging" class="cms-link cms-link--text"><h3>Dealing with Maven dependencies when switching to Git</h3></a>
+<a href="https://www.atlassian.com/git/articles/maven-dependencies-versions-merging" class="cms-link cms-link--text">Read article</a>
+</div>
+<a href="https://www.atlassian.com/git/articles" class="cms-link cms-link--text see-all">See All Articles</a>
+</div>
+</div>
+<div class="g-row home-section -glossary">
+<div class="container">
+<div class="g-column g-3-12 t-5-12 m-12-12 g-centered text-center">
+<h3 class="_label">Did you know...</h3>
+</div>
+<div class="home-glossary">
+<div class="g-column g-9-12 t-12-12 m-12-12 g-centered text-center">
+<h3 class="_def">Branch</h3>
+</div><div class="g-column g-6-12 t-12-12 m-12-12 g-centered text-center">
+<p><strong><span>Definition:&nbsp;</span></strong><span>A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process discussed in Git Basics, the first module of this series. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.</span></p>
+<a href="https://www.atlassian.com/git/glossary" class="cms-link cms-link--text see-all">See All References</a>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer" class="footer ">
+<div class="g-row _atlassian-logo">
+<div class="g-column g-12-12">
+<h5>Powered By</h5>
+<a href="https://bitbucket.org/" class="cms-link cms-link--image"><img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/Bitbucket-white.svg" alt="Atlassian"></a>
+</div></div>
+<div class="g-row">
+<div class="g-column g-4-12 t-12-12 m-12-12 t-gutterless">
+<h6>Recommend</h6>
+<a href="https://twitter.com/home?status=Switching%20to%20%23Git?%20Use%20the%20Atlassian%20Git%20tutorials%20to%20jumpstart%20your%20training%20in%20Git%20commands%20and%20workflows.%20https://www.atlassian.com/git" class="cms-link cms-link--image social-code"><img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/icon-twitter.svg" alt="Twitter"></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.atlassian.com/git" class="cms-link cms-link--image social-code"><img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/icon-facebook.svg" alt="Facebook"></a>
+<a href="https://plus.google.com/share?url=https://www.atlassian.com/git" class="cms-link cms-link--image social-code"><img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/icon-gplus.svg" alt="GooglePlus"></a>
+</div><div class="g-column g-4-12 t-12-12 m-12-12 t-gutterless">
+<h6>Want future articles?</h6>
+<form class="newsletter">
+<input class="is-empty _input" type="email" placeholder="Enter Your Email For Git News">
+<button type="submit" class="_status icon-email-submit">Submit</button>
+</form>
+</div><div class="g-column g-4-12 t-12-12 m-12-12 t-gutterless">
+<h6>Site hosted by</h6>
+<a href="https://www.atlassian.com/" class="cms-link cms-link--image"><img src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/Atlassian-horizontal-white-rgb.svg" alt="Bitbucket" class="_bitbucket-logo"></a>
+</div></div>
+<div class="g-row">
+<div class="g-column g-12-12 t-12-12 m-12-12">
+<p class="license"><a class="icon-global-cclicense" href="http://creativecommons.org/licenses/by/2.5/au/" rel="nofollow">creativecommons.org</a>Except where otherwise noted, all content is licensed under a <a href="http://creativecommons.org/licenses/by/2.5/au/" rel="nofollow">Creative Commons Attribution 2.5 Australia License</a>.</p>
+</div></div>
+</div>
+<script type="text/javascript">
+var HTTP_PREFIX = "";
+var FEATURE_FLAG_USE_GDPR = true;
+</script>
+<script type="text/javascript" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/git"></script><iframe src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/a1096093.html" hidden="" aria-hidden="true" tabindex="-1" height="0" width="0" style="display: none;"></iframe>
+<script type="text/javascript" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/app.js"></script>
+<script type="text/javascript">
+(function(){
+var imkt = window.imkt || (window.imkt = {});
+imkt.isEditMode = false;
+imkt.isProduction = true;
+imkt.constants = imkt.constants || {};
+imkt.constants.rootPath = "/";
+imkt.constants.assetPath = "https://wac-cdn.atlassian.com" + "/assets/";
+imkt.constants.libPath = imkt.constants.assetPath + "bower_components/";
+imkt.constants.cdnVersionQuery = "?cdnVersion=lb";
+imkt.constants.isDevUser = false;
+imkt.constants.getUserAccounts = false;
+imkt.constants.headerLoginMenu = true;
+imkt.constants.public = true;
+imkt.constants.mobileBreakpoint = 640;
+})();
+</script>
+<script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/code-block.min.js"></script>
+<script type="text/javascript" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/app(1).js"></script>
+<script type="text/x-component">
+{
+"type":"imkt.pages.WACPage",
+"params": {
+}
+}
+</script>
+<script>
+function initializeATLAnalytics() {
+if (typeof ace !== 'undefined') {
+ace.analytics.Initializer.initWithPageAnalytics('kiv6wyh2nw');
+}
+}
+</script>
+<script type="text/javascript" class="optanon-category-2">
+loadExternalJS("https://ace-cdn.atlassian.com/stp/current/analytics/js/atl-analytics.min.js", document.body, initializeATLAnalytics);
+</script>
+
+<!-- LastRendered: Feb 23, 2019 1:47:09 PM -->
+<iframe height="0" width="0" style="display: none; visibility: hidden;" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/activityi.html"></iframe><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/atl-analytics.min.js" type="text/javascript"></script><script type="text/javascript" id="">(function(a,b,c,d,e){a=b.createElement(c);b=b.getElementsByTagName(c)[0];a.async=1;a.id=e;a.src=d;b.parentNode.insertBefore(a,b)})(window,document,"script","https://scripts.demandbase.com/BwkB5d1U.min.js","demandbase_js_lib");</script>
+
+<script type="text/javascript" id="">var google_conversion_id=975152762,google_custom_params=window.google_tag_params,google_remarketing_only=!0;</script>
+<script type="text/javascript" id="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/f(1).txt"></script>
+<script type="text/javascript" id="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/oct.js"></script><script type="text/javascript" id="" charset="utf-8">var _eiq=_eiq||[],_engagio_settings={accountId:"bdc0527e86ab81381442177575715e753bc2af37"};(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://":"http://")+"web-analytics.engagio.com/js/ei.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script><script type="text/javascript" id="">ace.mkt.Helpers.throttle=function(a,h){var c,f,b,d=null,e=0,k=function(){e=new Date;d=null;b=a.apply(c,f)};return function(){var l=new Date;e||(e=l);var m=h-(l-e);c=this;f=arguments;0>=m?(clearTimeout(d),d=null,e=l,b=a.apply(c,f)):d||(d=setTimeout(k,m));return b}};ace.analytics.Tracking._autoTrackScrollEvent=function(a,h,c,f){ace.analytics.Tracking.trackEvent("scroll",{initialPercentage:a,windowHeight:h,documentHeight:c,percentage:f,_atl_path:ace.mkt.Cookie.readCookie("__atl_path")||""})};
+ace.analytics.Tracking.autoTrackScroll=function(){try{var a=Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight),h=window.innerHeight?window.innerHeight:window.screen.height,c=document.querySelector("body").scrollTop+h,f=parseInt(c/a*100),b=25,d={};for(a=1;a<100/b+1;a++)d[a*b]=!1;var e=ace.mkt.Helpers.throttle(function(){for(var a=Math.max(document.body.scrollHeight,document.body.offsetHeight,
+document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight),c=window.innerHeight?window.innerHeight:window.screen.height,e=document.documentElement.scrollTop+c,g=1;g<100/b+1;g++)e>=(a-1)*g*b/100&&!d[g*b]&&(ace.analytics.Tracking._autoTrackScrollEvent(f,c,a,g*b),d[g*b]=!0)},500);window.addEventListener("scroll",e)}catch(k){"undefined"!==typeof Bugsnag&&Bugsnag.notifyException(k)}};ace.analytics.Tracking.autoTrackScroll();</script><script type="text/javascript" id="">piAId="549382";piCId="16808";piHostname="pi.pardot.com";(function(){function a(){var b=document.createElement("script");b.type="text/javascript";b.src=("https:"==document.location.protocol?"https://pi":"http://cdn")+".pardot.com/pd.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)})();</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","221213238088884");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=221213238088884&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">(function(a,b){"function"!=typeof a.ClickTaleCreateDOMElement&&(a.ClickTaleCreateDOMElement=function(a){return b.createElementNS?b.createElementNS("http://www.w3.org/1999/xhtml",a):b.createElement(a)});a.WRInitTime=(new Date).getTime();var c=ClickTaleCreateDOMElement("script");c.type="text/javascript";var d="https:"==b.location.protocol?"https://cdnssl.clicktale.net/":"http://cdn.clicktale.net/";d+="www33/ptc/ef81b94c-8498-4f12-b358-eb76a000a247.js";c.src=d;b.getElementsByTagName("body")[0].appendChild(c)})(window,
+document);</script><script type="text/javascript" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/ef81b94c-8498-4f12-b358-eb76a000a247.js"></script><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/saved_resource" type="text/javascript"></script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/975152762/?value=0&amp;guid=ON&amp;script=0">
+</div>
+</noscript><img style="display:none" alt="" aria-hidden="true" id="db_pixel_ad" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/pixel"><img style="display:none" alt="" aria-hidden="true" id="db_pixel_rt" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/pixel(1)"><img style="display:none" alt="" aria-hidden="true" id="db_bw_pixel_ad" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/demandbase"><img style="display:none" alt="" aria-hidden="true" id="db_lr_pixel_ad" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/464526.gif"><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.3267499949219115"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.03658192227458401" width="0" height="0" alt="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/0"></div>
+<script type="text/javascript" id="">twttr.conversion.trackPid("nulad",{tw_sale_amount:0,tw_order_quantity:0});twttr.conversion.trackPid("numx2",{tw_sale_amount:0,tw_order_quantity:0});twttr.conversion.trackPid("nuoaw",{tw_sale_amount:0,tw_order_quantity:0});twttr.conversion.trackPid("nujcz",{tw_sale_amount:0,tw_order_quantity:0});</script><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/adsct" type="text/javascript"></script><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/adsct(1)" type="text/javascript"></script><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/adsct(2)" type="text/javascript"></script><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/adsct(3)" type="text/javascript"></script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nulad&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0">
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nulad&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0">
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=numx2&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0">
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=numx2&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0">
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nuoaw&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0">
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nuoaw&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0">
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nujcz&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0">
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nujcz&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0">
+</noscript>
+<script type="text/javascript">// Copyright 2006-2018 ClickTale Ltd., US Patent Pending
+// PID: 45
+// WR destination: www33
+// WR version: latest
+// Recording ratio: 0.6
+
+(function (){
+	var dependencyCallback;
+        var scriptSyncTokens = ["wr"];
+        var ct2Callback, isRecorderReady;
+    var dependencies = scriptSyncTokens.slice(0);
+    var clickTaleOnReadyList = window.ClickTaleOnReadyList || (window.ClickTaleOnReadyList = []);
+    var indexOf = (function(){if(Array.prototype.indexOf){return function(array,value){return array.indexOf(value)}}return function(array,value){var length=array.length;for(var i=0;i<length;i++){if(array[i]===value){return i}}return -1}})();
+    function isValidToken(token) {
+        if (indexOf(scriptSyncTokens, token) > -1) {
+            var index = indexOf(dependencies, token);
+
+            if (index > -1) {
+                dependencies.splice(index, 1);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    clickTaleOnReadyList.push(function () {
+        if (ct2Callback) {
+            ct2Callback();
+        }
+
+        isRecorderReady = true;
+    });
+
+    ClickTaleGlobal.scripts.dependencies = {
+        setDependencies: function (deps) {
+            scriptSyncTokens = deps;
+        },
+        onDependencyResolved: function (callback) {
+            dependencyCallback = callback;
+        },
+        notifyScriptLoaded: function (token) {
+            if (isValidToken(token)) {
+                if (dependencies.length === 0 && typeof dependencyCallback === "function") {
+                    dependencyCallback();
+                }
+            }
+        }
+    };
+
+    ClickTaleGlobal.scripts.integration = {
+        onReady: function (callback) {
+            if (isRecorderReady) {
+                callback();
+            }
+            else {
+                ct2Callback = callback;
+            }
+        }
+    };
+})();
+var ctVEconfig ={"VE_BASE_URL":"https://ve-cec-na1.app.clicktale.com/"};
+
+window.ClickTaleGlobal.VisualEditorDesignerExists = !!72;
+
+window.ClickTaleIsXHTMLCompliant = true;
+if (typeof (ClickTaleCreateDOMElement) != "function")
+{
+	ClickTaleCreateDOMElement = function(tagName)
+	{
+		if (document.createElementNS)
+		{
+			return document.createElementNS('http://www.w3.org/1999/xhtml', tagName);
+		}
+		return document.createElement(tagName);
+	}
+}
+
+if (typeof (ClickTaleAppendInHead) != "function")
+{
+	ClickTaleAppendInHead = function(element)
+	{
+		var parent = document.getElementsByTagName('head').item(0) || document.documentElement;
+		parent.appendChild(element);
+	}
+}
+
+if (typeof (ClickTaleXHTMLCompliantScriptTagCreate) != "function")
+{
+	ClickTaleXHTMLCompliantScriptTagCreate = function(code)
+	{
+		var script = ClickTaleCreateDOMElement('script');
+		script.setAttribute("type", "text/javascript");
+		script.text = code;
+		return script;
+	}
+}	
+
+
+
+// Start of user-defined pre WR code (PreLoad)
+//PTC Code Version 8
+
+window.ClickTaleSettings = window.ClickTaleSettings || {};
+window.ClickTaleSettings.PTC = window.ClickTaleSettings.PTC || {};
+if (document.readyState === 'complete') {
+    window.ClickTaleIncludedOnWindowLoad = true;
+}
+window.ClickTaleIncludedOnDOMReady = true;
+window.ClickTaleSettings.PTC.EnableChangeMonitor = false;
+window.ClickTaleSettings.PTC.UseTransport = true;
+window.ClickTaleUIDCookieName = 'WRUIDAWS';
+
+
+
+window.ClickTaleSettings.PTC.doOnlyWhen = function (toDoHandler, toCheckHandler, interval, times, failHandler) {
+    if ((!toDoHandler) || (!toCheckHandler)) return;
+    if (typeof interval == "undefined") interval = 100;
+    if (typeof times == "undefined") times = 10;
+    if (--times < 0) {
+        if (typeof failHandler === 'function') {
+            failHandler();
+        }
+        return;
+    }
+    if (toCheckHandler()) {
+        toDoHandler();
+        return;
+    }
+    setTimeout(function () {
+        window.ClickTaleSettings.PTC.doOnlyWhen(toDoHandler, toCheckHandler, interval, times, failHandler);
+    }, interval);
+};
+
+var staticIps = ['4.14.7.234', '4.15.43.214', '4.15.43.223', '14.143.132.208', '38.122.224.67', '62.87.203.114', '72.48.156.242', '72.48.156.244', '78.31.154.237', '103.233.242.8', '103.233.242.9',
+    '104.192.136.147', '104.192.136.211', '104.192.138.240', '104.192.139.144', '104.192.139.145', '104.192.139.233', '119.17.160.225',
+    '119.17.160.226', '153.150.114.121', '165.254.21.32', '165.254.21.33', '175.143.105.73', '177.101.193.50', '177.101.193.51', '185.48.102.19', '185.166.140.232', '191.32.51.97',
+    '191.32.51.98', '195.160.232.244', '195.160.235.244', '200.210.150.226', '203.177.65.173', '210.1.85.111', '210.19.86.66', '210.213.237.166', '213.208.192.131', '222.127.28.30'];
+
+window.CEC = window.CEC || {};
+window.CEC.onInit = function () {
+    if (localStorage.getItem('ctShouldRec') === 'false') {
+        CEC.disable();
+    }
+    else if (localStorage.getItem('ctShouldRec') !== 'true') {
+        /**
+         *
+         * @param {XMLHttpRequest} xhr
+         */
+        CEC.onXhrCreated = function (xhr) {
+            var oldOpen = xhr.open;
+            xhr.open = function () {
+                var url = arguments[1];
+                if (typeof url === 'string') {
+                    if (/auth/.test(url)) {
+                        var oldSend = this.send;
+                        this.send = function () {
+                            var args = arguments;
+                            var tempThis = this;
+                            window.ClickTaleSettings.PTC.doOnlyWhen(function () {
+                                var clientIp = ClickTaleGetClientIp();
+                                if (staticIps.indexOf(clientIp)>-1) {
+                                    localStorage.setItem('ctShouldRec', 'false');
+                                    CEC.shutdown();
+                                }
+                                else {
+                                    localStorage.setItem('ctShouldRec', 'true');
+                                    oldSend.apply(tempThis, args);
+                                }
+                            }, function () {
+                                return typeof ClickTaleGetClientIp === 'function' && ClickTaleGetClientIp();
+                            }, 500, 4);
+                        }
+                    }
+                }
+                oldOpen.apply(this, arguments);
+            }
+        }
+    }
+};
+
+window.ClickTaleSettings.CheckAgentSupport = function (f, v) {
+    if (v.t == v.IE && v.v <= 8) {
+        window.ClickTaleSettings.PTC.okToRunPCC = false;
+        return false;
+    } else {
+        if (!(v.t == v.IE && v.v <= 10)) {
+            window.ClickTaleSettings.PTC.EnableChangeMonitor = true;
+            window.ClickTaleSettings.PTC.ConfigChangeMonitor();
+        }
+        var fv = f(v);
+        window.ClickTaleSettings.PTC.okToRunPCC = fv;
+        return fv;
+    }
+};
+
+window.ClickTaleSettings.Protocol = {
+    Method: "ImpactRecorder"
+};
+
+window.ClickTaleSettings.Proxy = {
+    WR: "ing-district.clicktale.net/ctn_v2/",
+    ImageFlag: "ing-district.clicktale.net/ctn_v2/"
+};
+
+window.ClickTaleSettings.PTC.RulesObj = [{
+    selector: "input[type=\"text\"], input[type=\"tel\"], input[type=\"email\"]",
+    changeMon: {
+        Attributes: ['value'],
+        Text: false
+    },
+    rewriteApi: {
+        Attributes: ['value'],
+        Text: false
+    }
+}, {
+    selector: ".ctHidden",
+    changeMon: {
+        Attributes: ['value'],
+        Text: true
+    },
+    rewriteApi: {
+        Attributes: ['value'],
+        Text: true
+    }
+}, {
+    selector: ".account-link>a>span,#email[placeholder],.email",
+    changeMon: {
+        Attributes: false,
+        Text: true
+    },
+    rewriteApi: {
+        Attributes: false,
+        Text: true
+    }
+}];
+
+window.ClickTaleSettings.PTC.RulesObjRemoveEls = [
+    {
+        changeMon: 'svg',
+        changeMonLive: 'svg',
+        rewriteApiReplace: 'svg'
+    }
+];
+
+;
+(function () {
+    if (typeof window.ClickTalePIISelector === 'string' && window.ClickTalePIISelector != '') {
+        try {
+            var domNodes = document.querySelectorAll(window.ClickTalePIISelector);
+            if (domNodes) {
+                window.ClickTaleSettings.PTC.RulesObj.push({
+                    selector: window.ClickTalePIISelector,
+                    changeMon: {
+                        Attributes: ['value'],
+                        Text: true
+                    },
+                    rewriteApi: {
+                        Attributes: ['value'],
+                        Text: true
+                    }
+                });
+            }
+        } catch (err) { }
+    }
+})();
+
+window.ClickTaleSettings.PTC.cloneNodeIE9 = function (node) {
+    var clone = node.nodeType === 3 ? document.createTextNode(node.nodeValue) : node.cloneNode(false);
+    var child = node.firstChild;
+    while (child) {
+        var nodeName = child.nodeName.toLowerCase();
+        if (nodeName == 'script') {
+            var script = document.createElement('script');
+            clone.appendChild(script);
+        } else if (window.ClickTaleSettings.PTC.cloneNodeIE9.badEls[nodeName]) {
+            var newN = document.createElement(nodeName);
+            var attributes = child.attributes;
+            var attrLength = attributes.length;
+            for (var i = 0; i < attrLength; i++) {
+                var attr = attributes[i];
+                if (!/['"{}]/.test(attr.nodeName)) {
+                    newN.setAttribute('ctdep-' + attr.nodeName, attr.nodeValue);
+                }
+            }
+            if (child.ClickTale && child.ClickTale.CustomID) {
+                newN.setAttribute('data-ClickTaleCustomId', child.ClickTale.CustomID);
+            }
+            clone.appendChild(newN);
+        } else {
+            clone.appendChild(window.ClickTaleSettings.PTC.cloneNodeIE9(child));
+        }
+        child = child.nextSibling;
+    }
+    if (node.ClickTale && node.ClickTale.CustomID) {
+        clone.setAttribute('data-ClickTaleCustomId', node.ClickTale.CustomID);
+    }
+    return clone;
+}
+
+window.ClickTaleSettings.PTC.cloneNodeIE9.badEls = {
+    'iframe': true,
+    'img': true,
+    'source': true
+};
+
+window.ClickTaleSettings.PTC.ConfigChangeMonitor = function () {
+
+    if (window.ClickTaleSettings.PTC.EnableChangeMonitor) {
+        window.ClickTaleSettings.XHRWrapper = {
+            Enable: false
+        };
+
+        var script = document.createElement("SCRIPT");
+        script.src = (document.location.protocol === "https:" ? "https://cdnssl." : "http://cdn.") + "clicktale.net/www/ChangeMonitor-latest.js";
+        document.body.appendChild(script);
+
+        window.ClickTaleSettings.ChangeMonitor = {
+            Enable: true,
+            AddressingMode: "id",
+            OnReadyHandler: function (changeMonitor) {
+                changeMonitor.observe();
+
+                var CMRemrule = window.ClickTaleSettings.PTC.RulesObjRemoveEls;
+                if (CMRemrule) {
+                    for (var i = 0; i < CMRemrule.length; i++) {
+                        var rule = CMRemrule[i];
+                        var CMlocation = rule['location'];
+                        if ((!CMlocation || (CMlocation && document.location[CMlocation['prop']].toLowerCase().search(CMlocation.search) != -1))) {
+                            if (rule.changeMon) {
+                                changeMonitor.exclude(rule.changeMon);
+                            }
+                            if (rule.changeMonLive) {
+                                changeMonitor.exclude({
+                                    selector: rule.changeMonLive,
+                                    multiple: true
+                                });
+                            }
+                        }
+                    }
+                }
+            },
+            OnBeforeReadyHandler: function (settings) {
+                settings.Enable = window.ClickTaleGetUID ? !!ClickTaleGetUID() : false;
+                return settings;
+            },
+            Filters: {
+                MaxBufferSize: 300000,
+                MaxElementCount: 3000
+            },
+            PII: {
+                Text: [],
+                Attributes: []
+            }
+        }
+        var RulesObj = window.ClickTaleSettings.PTC.RulesObj;
+        if (RulesObj) {
+            window.ClickTaleSettings.ChangeMonitor.PII.Text = window.ClickTaleSettings.ChangeMonitor.PII.Text || [];
+            window.ClickTaleSettings.ChangeMonitor.PII.Attributes = window.ClickTaleSettings.ChangeMonitor.PII.Attributes || [];
+            for (var i = 0; i < RulesObj.length; i++) {
+                var CMrule = RulesObj[i]['changeMon'];
+                var CMlocation = RulesObj[i]['location'];
+                if (!CMrule || (CMlocation && document.location[CMlocation['prop']].toLowerCase().search(CMlocation.search) === -1)) {
+                    continue;
+                }
+                var selector = RulesObj[i]['selector'];
+                var attributesArr = CMrule.Attributes;
+                if (attributesArr instanceof Array) {
+                    window.ClickTaleSettings.ChangeMonitor.PII.Attributes.push({
+                        selector: selector,
+                        transform: (function (attributesArr) {
+                            return function (el) {
+                                var attrs = el.attributes;
+                                var attrsToReturn = {}
+                                for (var i = 0; i < attrs.length; i++) {
+                                    var name = attrs[i].nodeName;
+                                    attrsToReturn[name] = attrs[i].nodeValue;
+                                }
+                                for (var u = 0; u < attributesArr.length; u++) {
+                                    var attr = attributesArr[u];
+                                    var attrib = el.getAttribute(attr);
+                                    if (typeof attrib === 'string') {
+                                        attrsToReturn[attr] = attrib.replace(/\w/g, '-');
+                                    }
+                                }
+
+                                return attrsToReturn;
+                            }
+                        })(attributesArr)
+                    });
+                }
+                if (CMrule.Text) {
+                    window.ClickTaleSettings.ChangeMonitor.PII.Text.push({
+                        selector: selector,
+                        transform: function (el) {
+                            return el.textContent.replace(/\w/g, '-');
+                        }
+                    });
+                }
+            }
+        }
+    }
+};
+
+window.ClickTaleSettings.Compression = {
+    Method: function () {
+        return "deflate";
+    }
+};
+
+window.ClickTaleSettings.Transport = {
+    Legacy: false,
+    MaxConcurrentRequests: 5
+};
+
+window.ClickTaleSettings.RewriteRules = {
+    OnBeforeRewrite: function (rewriteApi) {
+        var bodyClone = ClickTaleSettings.PTC.cloneNodeIE9(document.documentElement);
+
+        if (window.ClickTaleSettings.PTC.RulesObj) {
+            rewriteApi.add(function (buffer) {
+
+                var RulesObj = window.ClickTaleSettings.PTC.RulesObj;
+                for (var i = 0; i < RulesObj.length; i++) {
+                    var rewriteApirule = RulesObj[i]['rewriteApi'];
+                    var rewriteApilocation = RulesObj[i]['location'];
+                    if (!rewriteApirule || (rewriteApilocation && document.location[rewriteApilocation['prop']].toLowerCase().search(rewriteApilocation.search) === -1)) {
+                        continue;
+                    }
+                    var selector = RulesObj[i]['selector'];
+                    var elements = bodyClone.querySelectorAll(selector);
+
+                    Array.prototype.forEach.call(elements, function (el, ind) {
+                        var attributesArr = rewriteApirule.Attributes;
+                        if (attributesArr instanceof Array) {
+
+                            for (var u = 0; u < attributesArr.length; u++) {
+                                var attr = attributesArr[u];
+                                var attrib = el.getAttribute(attr);
+                                if (typeof attrib === 'string') {
+                                    el.setAttribute(attr, attrib.replace(/\w/g, '-'));
+                                }
+                            }
+
+                        }
+                        if (rewriteApirule.Text) {
+                            var children = el.childNodes;
+                            Array.prototype.forEach.call(children, function (child) {
+                                if (child && child.nodeType === 3) {
+                                    child.textContent = child.textContent.replace(/\w/g, '-');
+                                }
+                            });
+                        }
+                    });
+                }
+
+                var RulesObjRemoveEls = window.ClickTaleSettings.PTC.RulesObjRemoveEls;
+                if (RulesObjRemoveEls) {
+                    for (var i = 0; i < RulesObjRemoveEls.length; i++) {
+                        if (RulesObjRemoveEls[i].rewriteApi) {
+                            var elementsToRemove = bodyClone.querySelectorAll(RulesObjRemoveEls[i].rewriteApi);
+                            Array.prototype.forEach.call(elementsToRemove, function (el, ind) {
+                                if (el.parentNode) {
+                                    el.parentNode.removeChild(el);
+                                }
+                            });
+                        }
+                        if (RulesObjRemoveEls[i].rewriteApiReplace) {
+                            var elementsToReplace = bodyClone.querySelectorAll(RulesObjRemoveEls[i].rewriteApiReplace);
+                            Array.prototype.forEach.call(elementsToReplace, function (el, ind) {
+                                if (el.parentNode) {
+                                    var comment = document.createComment(el.outerHTML);
+                                    el.parentNode.replaceChild(comment, el);
+                                }
+                            });
+                        }
+                    }
+                }
+
+                return bodyClone.innerHTML.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, '<script><\/script>').replace(/(<div id="?ClickTaleDiv"?[^>]+>)\s*<script[^>]+><\/script>\s*(<\/div>)/i, '$1$2');
+            });
+        }
+        rewriteApi.add({
+            pattern: /ctdep-/gi,
+            replace: ''
+        });
+        rewriteApi.add({
+            pattern: /(<head[^>]*>)/i,
+            replace: '$1<script type="text\/javascript" class="cm-ignore" src="http:\/\/dummytest.clicktale-samples.com\/GlobalResources\/jquery.js"><\/script>'
+        });
+    }
+};
+
+//Integrations
+window.ClickTaleSettings.PTC.Integrations = [
+    "Optimizely | Core",
+    "Optimizely | CEC"
+];
+
+
+
+// End of user-defined pre WR code
+
+
+var isHttps = document.location.protocol == 'https:',
+	scriptSource = window.ClickTaleScriptSource,
+	pccSource = scriptSource;
+
+if (!scriptSource) {
+	window.ClickTaleScriptSource = isHttps ? 'https://cdnssl.clicktale.net/www/' : 'http://cdn.clicktale.net/www/';
+}
+
+ClickTaleGlobal.init.monitorScriptName = "Monitor-latest.js";
+ClickTaleGlobal.init.isAllowed && typeof ClickTaleGlobal.init.pmc === "function" && ClickTaleGlobal.init.pmc(autoMonitorConfig);
+
+if(!ClickTaleGlobal.init.pccRequested) {
+	var pccSrc = pccSource ? pccSource + 'ef81b94c-8498-4f12-b358-eb76a000a247.js?DeploymentConfigName=Release_20181207&Version=1' : (isHttps ? 'https://cdnssl.clicktale.net/www33/pcc/ef81b94c-8498-4f12-b358-eb76a000a247.js?DeploymentConfigName=Release_20181207&Version=1' : 'http://cdn.clicktale.net/www33/pcc/ef81b94c-8498-4f12-b358-eb76a000a247.js?DeploymentConfigName=Release_20181207&Version=1');
+		var pccScriptElement = ClickTaleCreateDOMElement('script');
+	pccScriptElement.type = "text/javascript";
+	pccScriptElement.crossOrigin = "anonymous";
+	pccScriptElement.src = pccSrc;
+	ClickTaleGlobal.init.isAllowed && document.body.appendChild(pccScriptElement);
+		ClickTaleGlobal.init.pccRequested = true;
+}
+	window.ClickTaleGlobal.PCCExists = true;
+	
+window.ClickTalePrevOnReady = typeof window.ClickTaleOnReady == 'function' ? window.ClickTaleOnReady : void 0;
+
+window.ClickTaleOnReady = function() {
+	var PID=45, 
+		Ratio=0.6, 
+		PartitionPrefix="www33",
+		SubsId=233232;
+	
+	if (window.navigator && window.navigator.loadPurpose === "preview") {
+       return;
+	};
+		
+	
+	// Start of user-defined header code (PreInitialize)
+	if (typeof ClickTaleSetAllSensitive === "function") {
+    ClickTaleSetAllSensitive();
+};
+
+window.ClickTaleSettings.PTC.InitFuncs = window.ClickTaleSettings.PTC.InitFuncs || [];
+window.ClickTaleSettings.PTC.InitFuncs.push(function() {
+    var pcc = document.querySelector('script[src*="clicktale"][src*="pcc"]');
+    if (pcc) {
+        var versionmatch = pcc.src.match(/DeploymentConfigName=(.+)/i);
+        if (versionmatch && typeof ClickTaleExec === 'function') {
+            ClickTaleExec("console.info('" + versionmatch[0] + "');");
+            ClickTaleEvent("Config: " + versionmatch[1].replace(/\&.+/, ''));
+        }
+    }
+});
+
+function doUpload() {
+    if (typeof ClickTaleUploadPageNow === 'function' && ClickTaleIsRecording()) {
+        ClickTaleUploadPageNow();
+
+    };
+};
+
+function isReadyToRecord() {
+    if (typeof ClickTaleUploadPageNow === 'function' && ClickTaleIsRecording()) {
+        return true;
+    }
+    return false;
+};
+
+if (typeof ClickTaleDelayUploadPage === 'function' && window.ClickTaleSettings.PTC.UseTransport) {
+    ClickTaleDelayUploadPage();
+
+    //AB Test Integration Timeout
+    setTimeout(function() {
+        window.ClickTaleSettings.PTC.doOnlyWhen(doUpload, isReadyToRecord, 100, 10, doUpload);
+    }, 1000);
+
+    var initFuncs = window.ClickTaleSettings.PTC.InitFuncs;
+    for (var i = 0, initLen = initFuncs.length; i < initLen; i++) {
+        if (typeof initFuncs[i] === 'function') {
+            initFuncs[i]();
+        }
+    }
+}
+
+	// End of user-defined header code (PreInitialize)
+    
+	
+	window.ClickTaleIncludedOnDOMReady=true;
+	
+	ClickTaleGlobal.init.isAllowed && ClickTale(PID, Ratio, PartitionPrefix, SubsId);
+	
+	if((typeof ClickTalePrevOnReady == 'function') && (ClickTaleOnReady.toString() != ClickTalePrevOnReady.toString()))
+	{
+    	ClickTalePrevOnReady();
+	}
+	
+	
+	// Start of user-defined footer code
+	
+	// End of user-defined footer code
+	
+}; 
+(function() {
+	var div = ClickTaleCreateDOMElement("div");
+	div.id = "ClickTaleDiv";
+	div.style.display = "none";
+	document.body.appendChild(div);
+
+	
+	
+	var wrScript = ClickTaleCreateDOMElement("script");
+	wrScript.crossOrigin = "anonymous";	
+	wrScript.src = window.ClickTaleScriptSource + 'WR-latest.js';
+	wrScript.type = 'text/javascript';
+		wrScript.async = true;
+		ClickTaleGlobal.init.isAllowed && document.body.appendChild(wrScript);
+})();
+
+
+
+
+
+!function(){try{var e=window.chrome,t=window.navigator&&window.navigator.vendor;null!=e&&"Google Inc."===t&&window.addEventListener&&addEventListener("message",n,!1)}catch(e){}function n(e){var t,n;try{t=JSON.parse(e.data)}catch(e){return}!1!==new RegExp("(app[.]clicktale[.]com)($|:)").test(e.origin)&&(window.ct_ve_parent_window=e.source,"CT_testRules"==t.name&&(sessionStorage.setItem("CT_testRules",!0),console.log((new Date).toJSON(),"PostPTC: testRules ",sessionStorage.getItem("CT_testRules")),window.ct_ve_parent_window.postMessage({name:"testRulesRecieved",params:{}},"*")),"CTload_ve"===t.function&&"function"==typeof ClickTaleGetPID&&null!==ClickTaleGetPID()&&(!function(){console.log((new Date).toJSON(),"PostPTC: start loading test rules");var e=o("script");e.setAttribute("type","application/javascript"),e.setAttribute("id","ctTestRulesModule"),e.onload=function(){sessionStorage.setItem("CT_testRules_Loaded",!0),console.log((new Date).toJSON(),"PostPTC: test rules loaded")};var t=ClickTaleGetPID();e.src=ctVEconfig.VE_BASE_URL+"rulesEngineContent/TestPCC/"+t,document.getElementById("ctTestRulesModule")||document.body.appendChild(e)}(),(n=o("script")).setAttribute("type","text/javascript"),n.setAttribute("id","ctVisualEditorClientModule"),n.src=ctVEconfig.VE_BASE_URL+"client/dist/veClientModule.js",document.getElementById("ctVisualEditorClientModule")||document.body.appendChild(n)))}function o(e){return document.createElementNS?document.createElementNS("http://www.w3.org/1999/xhtml",e):document.createElement(e)}}();</script><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/monitor-latest.js" async="" type="text/javascript" crossorigin="anonymous"></script><script type="text/javascript" crossorigin="anonymous" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/ef81b94c-8498-4f12-b358-eb76a000a247(1).js"></script><div id="ClickTaleDiv" style="display: none;"><script async="" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/WR1021b.js"></script></div><script crossorigin="anonymous" src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/WR-latest.js" type="text/javascript" async=""></script><script src="./Learn Git- Git tutorials, workflows and commands _ Atlassian Git Tutorial_files/ChangeMonitor-latest.js"></script></body></html>

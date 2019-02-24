@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   }
   getFunky()
-
 })
 
 function getcomputerchoice() {
@@ -54,7 +53,6 @@ function game(userChoice) {
 
     default:
       resultdiv.innerHTML = wordConvert(computerChoice) + ' vs ' + wordConvert(userChoice) + '. Match drawn.'
-
   }
 }
 

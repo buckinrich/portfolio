@@ -27,6 +27,13 @@ $(() => {
     }
   })
 
+  // const myMoles = ['mole1', 'mole2', 'mole3']
+  //
+  // function randomMole() {
+  //   const myIndex = Math.floor(Math.random() * myMoles.length)
+  //   return myMoles[myIndex]
+  // }
+
   //Countdown
   let countdown = null
   let timeRemaining = 50

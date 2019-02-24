@@ -36,7 +36,7 @@ $(() => {
 
     enemyLaser() {
       const enemyLaserPosition = this.currentIndex + 20
-      const shouldFire = Math.floor(Math.random() * 10)
+      const shouldFire = Math.floor(Math.random() * 15)
       let enemyLaser
       if (!shouldFire) {
         enemyLaser = new Laser(enemyLaserPosition, 'down', 'enemyLaser')

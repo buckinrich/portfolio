@@ -1,0 +1,78 @@
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background: white;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background: #edeaea;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+header {
+  font-family: 'Arvo', serif;
+}
+
+h1 {
+  text-shadow: 1px 1px white;
+}
+
+.intro {
+  text-align: left;
+  margin-bottom: 40px;
+  color: #717375;
+}
+
+h2 {
+  font-family: 'Arvo', serif;
+  text-align: left;
+}
+
+.explain {
+  text-align: left;
+}
+.spacediv {
+  /* margin-top: 40px; */
+  width: 600px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.spaceinvaders {
+  width: 600px;
+  height: 400px;
+}
+
+.whackdiv {
+  width: 600px;
+  height: 620px;
+  margin: 0 auto;
+}
+
+.whackamole {
+  width: 600px;
+  height: 400px;
+}
+
+.rpsdiv {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+.rps {
+  width: 600px;
+  height: 400px;
+}
+
+.trilbyandfox {
+  width: 600px;
+  height: 400px;
+}
+
+.trilbydiv {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}

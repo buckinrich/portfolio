@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background: url("images/darkspace.jpg");
+  background: url("images/spaceinvadersminimal.jpg");
   width: 100vh;
   height: 100vh;
   display: flex;
@@ -25,7 +25,7 @@ h1 {
   line-height: 2;
   animation-duration: 3s;
   animation-name: pulse;
-  text-shadow: 2px 3px dodgerblue;
+  text-shadow: 2px 3px gray;
 }
 
 h1:hover {
@@ -64,6 +64,7 @@ header {
   border-radius: 15px;
   visibility: hidden;
   margin-bottom: 50px;
+  background: white;
 }
 
 button:hover {
@@ -88,13 +89,14 @@ button:hover {
 .startButton {
   margin-top: 40px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   background: black;
   line-height: 1.5;
   font-size: 16px;
   width: 170px;
   height: 80px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
   border: 1px solid black;
   color: white;
 }

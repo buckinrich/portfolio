@@ -1,3 +1,11 @@
+body {
+ font-family: 'Ubuntu Condensed', sans-serif;
+  background: white;
+  align-content: center;
+  text-align: center;
+}
+
+
 .spaceinvaders {
   width: 600px;
   height: 400px;
@@ -9,6 +17,11 @@
 }
 
 .rps {
+  width: 600px;
+  height: 400px;
+}
+
+.trilbyandfox {
   width: 600px;
   height: 400px;
 }

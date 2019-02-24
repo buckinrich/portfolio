@@ -4,9 +4,9 @@ $(() => {
   let score = 0
   let timerRunning = false
   const $score = $('#scoreupdate')
-  const whack = new Audio('sounds/pop.wav')
+  const whack = new Audio('sounds/Pop.wav')
   const squeak = new Audio('sounds/chipmunk.wav')
-  const woohoo = new Audio('sounds/woohoo.wav')
+  const woohoo = new Audio('sounds/Woohoo.wav')
 
   //Mole set interval
   setInterval(() => {

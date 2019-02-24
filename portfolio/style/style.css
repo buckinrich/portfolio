@@ -15,7 +15,13 @@ header {
 }
 
 h1 {
-  
+  text-shadow: 1px 1px white;
+}
+
+.intro {
+  text-align: left;
+  margin-bottom: 40px;
+  color: #717375;
 }
 
 h2 {
@@ -23,23 +29,26 @@ h2 {
   text-align: left;
 }
 
+.explain {
+  text-align: left;
+}
 .spacediv {
   /* margin-top: 40px; */
   width: 600px;
-  height: 700px;
+  height: 800px;
   margin: 0 auto;
   padding: 20px;
-}
-
-.whackdiv {
-  width: 600px;
-  height: 600px;
-  margin: 0 auto;
 }
 
 .spaceinvaders {
   width: 600px;
   height: 400px;
+}
+
+.whackdiv {
+  width: 600px;
+  height: 620px;
+  margin: 0 auto;
 }
 
 .whackamole {
@@ -60,4 +69,10 @@ h2 {
 .trilbyandfox {
   width: 600px;
   height: 400px;
+}
+
+.trilbydiv {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
 }
